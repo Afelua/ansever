@@ -1,0 +1,104 @@
+
+
+<div class="grid">
+	{section name=i loop=$grid_items}
+	<a
+				href="{if $grid_items[i].url!=''}{$grid_items[i].url}{else}{$grid_items[i].href}{/if}"
+				title="{$grid_items[i].city}/{$grid_items[i].district}/{$grid_items[i].street}">
+
+
+	<div class="t_i_i{if $smarty.section.i.index is even} t_i_odd{/if}{if $grid_items[i].hot==1}{if $smarty.section.i.index is even} t_i_opayed{else} t_i_payed{/if}{/if}{if $grid_items[i].bold_status==1} grid_thumbs_bold{/if}{if $grid_items[i].premium_status==1} grid_thumbs_premium{/if}" >
+		{if $grid_items[i].img != '' }
+		<div class="t_i_photo t_i_photo_s">
+			
+				<span class="t_i_desc">{$grid_items[i].text|strip_tags|truncate:200}
+				</span>
+				<img src="{$estate_folder}/img/data/{$grid_items[i].img[0].preview}"
+				alt="{$grid_items[i].city}/{$grid_items[i].district}/{$grid_items[i].street}" />
+		</div>
+		{else}
+		<div class="t_i_photo t_i_photo_s">
+			<a
+				href="{if $grid_items[i].url!=''}{$grid_items[i].url}{else}{$grid_items[i].href}{/if}"
+				title="{$grid_items[i].city}/{$grid_items[i].district}/{$grid_items[i].street}">
+				<span class="t_i_desc">{$grid_items[i].text|strip_tags|truncate:200}
+				</span>
+				<img src="{$estate_folder}/img/no_foto.png"
+				alt="{$grid_items[i].city}/{$grid_items[i].district}/{$grid_items[i].street}" />
+			</a>
+		</div>
+		{/if}
+
+		<div class="t_i_title">
+			{if $grid_items[i].metro!=''}
+				{if $grid_items[i].metro=='Курская'}
+				<p class="circle" style="background:red;"></p>
+				<p class="listitemmetro" style="color:red;">
+					<span>{$grid_items[i].metro}</span>
+				</p>
+				{/if}
+
+				{if $grid_items[i].metro=='Крымская'}
+				<p class="circle" style="background:green;"></p>
+				<p class="listitemmetro" style="color:green;">
+					<span>{$grid_items[i].metro}</span>
+				</p>
+				{/if}
+
+			{/if}
+
+
+			<h3 class="t_i_h3">
+
+				<span> {if
+					$grid_items[i].city ne ''} {$grid_items[i].city}{if
+					$grid_items[i].street ne ''}, {$grid_items[i].street}{if
+					$grid_items[i].number ne ''}, {$grid_items[i].number}{/if}{/if}
+					{else} {if $grid_items[i].street ne ''} {$grid_items[i].street}{if
+					$grid_items[i].number ne ''}, {$grid_items[i].number}{/if} {/if}
+					{/if} </span>
+			</h3>
+
+			<div class="t_i_data">
+
+				<span>{$grid_items[i].room_count} к. кв.</span>, 
+				<span>{if $grid_items[i].square_all ne
+				''}{$grid_items[i].square_all}{/if} м2</span>
+			</div>
+
+			<!--p>
+				<span>ID: {$grid_items[i].id}</span>
+			</p-->
+
+			
+			<!--p>
+				<span>Этаж
+					{$grid_items[i].floor}/{$grid_items[i].floor_count}</span>
+			</p-->
+			<p>
+				<span class="listitemprice">{$grid_items[i].price|number_format:0:",":"
+					"} {if $grid_items[i].currency_name != ''}{$grid_items[i].currency_name}{/if} руб.
+ 					
+					</span>
+			</p>
+
+   				
+		</div>
+
+	</div>
+
+
+ {/section}
+
+	</a>
+</div>
+
+<div class="clear"></div>  
+{if $pager != ''}
+<div class="pager">{$pager}</div>
+{/if}
+
+</div>
+
+
+

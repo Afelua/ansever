@@ -1,0 +1,33 @@
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<table width="100%;">
+			<tr>
+			<td width="28%">
+				<b>Наш офис:</b> м. Василеостровская <br>
+				Санкт-Петербург, ВО 6-линия д.43 
+
+			</td>
+
+			<td width="44%" style="text-align: center;">
+				<img src="/img/logo1.png">
+			</td>
+
+			<td width="28%" style="text-align: right;">
+				<b>Нужна помощь?</b> Звоните <a href="tel:+7 (812) 327-49-79">(812) 327-49-79</a> <br>
+				или <span style="text-decoration:underline">оставьте заявку</span>
+
+			</td>
+			</tr>
+			</table>
+			<br>
+			<ul class="nav">
+				{section name=i loop=$right_menu}
+				<li><a href="{$right_menu[i].url}">{$right_menu[i].name}</a></li>
+				{/section}
+			</ul>
+
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+/* 
+	Resets defualt browser settings
+	reset.css
+*/
+
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+	padding: 5px;
+}
+
+
+#slides .next {
+	right: 0px;
+}
+
