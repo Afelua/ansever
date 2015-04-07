@@ -47,6 +47,7 @@ class Data_Manager_Export extends Object_Manager {
         $this->data_model[$this->table_name]['user_id']['title'] = Multilanguage::_('L_TEXT_USER');
         $this->data_model[$this->table_name]['active']['title'] = Multilanguage::_('L_PUBLISHED_SH');
         $this->data_model[$this->table_name]['hot']['title'] = Multilanguage::_('L_SPECIAL_SH');
+        $this->data_model[$this->table_name]['hot2']['title'] = Multilanguage::_('L_SPECIAL_SH2');
         $this->data_model[$this->table_name]['view_count']['title'] = Multilanguage::_('L_VIEW_COUNT');
         
         

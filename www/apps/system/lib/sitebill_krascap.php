@@ -881,6 +881,12 @@ class SiteBill_Krascap extends SiteBill {
         } else {
             $data_array['hot'] = 0;
         }
+
+        if ( $this->getRequestValue('hot2') == 1 ) {
+            $data_array['hot2'] = 1;
+        } else {
+            $data_array['hot2'] = 0;
+        }
         
         if ( $this->getRequestValue('floor') != '' ) {
             $data_array['floor'] = $this->getRequestValue('floor');

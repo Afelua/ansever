@@ -72,7 +72,7 @@ $(document).ready(function(){
 		return true;
 	});
 	
-	$('a#specialoffers').ready(function(){
+	$('a#specialoffers2').ready(function(){
 		var container=$('#tabs-services-special2');
 		container.html('Загрузка...');
 		$.ajax({
@@ -363,3 +363,4 @@ function get_specialoffers(el){
     });
 	return true;
 }
+

@@ -1,18 +1,39 @@
-<script src="{$estate_folder}/apps/system/js/json2.js" type="text/javascript"></script>
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 16:07:30
+         compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:210605523904266eaa8-76557568%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '5e2f81a9ab9f31208edf3c62302921d066a1683a' => 
+    array (
+      0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid.tpl',
+      1 => 1428394045,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '210605523904266eaa8-76557568',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
+<script src="<?php echo $_smarty_tpl->getVariable('estate_folder')->value;?>
+/apps/system/js/json2.js" type="text/javascript"></script>
 
 <div class="full_Page">
 
 
-{assign var="lang_topic_name" value="name_{$smarty.session._lang}"}
+<?php $_smarty_tpl->tpl_vars["lang_topic_name"] = new Smarty_variable("name_".($_SESSION['_lang']), null, null);?>
 
 
 
 
 
 
-    {include file='realty_grid_thumbs.tpl.html'}
+    <?php $_template = new Smarty_Internal_Template('realty_grid_thumbs.tpl.html', $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
 
-{if $main_file_tpl != ''}
+<?php if ($_smarty_tpl->getVariable('main_file_tpl')->value!=''){?>
     <div class="right_catalog">
 
     <!--a onclick="hidetxt(); return false;" href="#" rel="nofollow">Ссылка 1</a-->
@@ -27,18 +48,22 @@
 	</div>
 
 	<div id="search_main">
-			{if !$is_account and !preg_match('/mapviewer/', $smarty.server.REQUEST_URI)}
-        		{include file="search_form.tpl"}
-    		{else if $is_account}
-        		{include file="remember.tpl"}
-    		{/if}
+			<?php if (!$_smarty_tpl->getVariable('is_account')->value&&!preg_match('/mapviewer/',$_SERVER['REQUEST_URI'])){?>
+        		<?php $_template = new Smarty_Internal_Template("search_form.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
+    		<?php }elseif($_smarty_tpl->getVariable('is_account')->value){?>
+        		<?php $_template = new Smarty_Internal_Template("remember.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
+    		<?php }?>
 	</div>
-	{include file="news_list_column.tpl"}
+	<?php $_template = new Smarty_Internal_Template("news_list_column.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
 	<hr class="news_hr">
-	{include file="realty_grid_thumbs_what.html"}
+	<?php $_template = new Smarty_Internal_Template("realty_grid_thumbs_what.html", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
 	</div>
 
-{/if}
+<?php }?>
 </div>
 
 
@@ -47,11 +72,12 @@
 
 
 	<script type="text/javascript">
-	var realty_geo_data = {$grid_geodata}; 
+	var realty_geo_data = <?php echo $_smarty_tpl->getVariable('grid_geodata')->value;?>
+; 
 	</script>
 	
 
-		{literal}
+		
 		<script type="text/javascript">
 		ymaps.ready(init);
 	    var map;
@@ -141,7 +167,7 @@
 			}
 		}
 		</script>
-		{/literal}
+		
 
 	
 

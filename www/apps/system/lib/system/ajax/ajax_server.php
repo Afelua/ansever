@@ -1034,7 +1034,7 @@ class Ajax_Server extends SiteBill {
         		}
         		if ( $GC->get_grid_total_records() > 0 ) {
         			$this->template->assert('grid_items',$adv);
-        			$rs=$smarty->fetch('realty_grid.tpl');
+        			$rs=$smarty->fetch('realty_grid_special.tpl');
         		} else {
         			$rs = '<h2>'.Multilanguage::_('L_NO_HOT').'</h2>';
         		}
@@ -1043,6 +1043,32 @@ class Ajax_Server extends SiteBill {
         		return json_encode($ra);
         	
         	break;
+
+            case 'get_specialoffers2':
+                global $smarty;
+            
+                require_once SITEBILL_DOCUMENT_ROOT.'/apps/system/lib/sitebill_krascap.php';
+                require_once SITEBILL_DOCUMENT_ROOT.'/apps/system/lib/frontend/grid/grid_constructor.php';
+                if ( $this->getConfigValue('theme') == 'kupikuban' ) {
+                    require_once SITEBILL_DOCUMENT_ROOT.'/template/frontend/'.$this->getConfigValue('theme').'/main/grid_constructor_local.php';
+                    $GC=new Grid_Constructor_Local();
+                    $adv=$GC->vip_array(array('vip'=>'1'));
+                } else {
+                    $GC=new Grid_Constructor();
+                    $adv=$GC->get_sitebill_adv_ext(array('hot2'=>'1'));
+                }
+                if ( $GC->get_grid_total_records() > 0 ) {
+                    $this->template->assert('grid_items',$adv);
+                    $rs=$smarty->fetch('realty_grid_special.tpl');
+                } else {
+                    $rs = '<h2>'.Multilanguage::_('L_NO_HOT').'</h2>';
+                }
+
+                $ra['response']['body'] = htmlentities( $rs, ENT_QUOTES, SITE_ENCODING);
+                return json_encode($ra);
+            
+            break;
+
         	case 'get_recomendation':
         		if ( file_exists(SITEBILL_DOCUMENT_ROOT.'/template/frontend/'.$this->getConfigValue('theme').'/grid/grid_constructor.php') ) {
         			global $smarty;

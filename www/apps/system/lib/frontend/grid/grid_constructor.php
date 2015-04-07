@@ -2696,6 +2696,11 @@ class Grid_Constructor extends SiteBill_Krascap {
     		$where_array[] = 're_data.hot = 1';
     		$QB->addCondition(DB_PREFIX.'_data.hot', 'eq', 1);
     	}
+
+        if ( isset($params['onlyspecial2']) && $params['onlyspecial2'] > 0  ) {
+            $where_array[] = 're_data.hot2 = 1';
+            $QB->addCondition(DB_PREFIX.'_data.hot2', 'eq', 1);
+        }
     
     
     	if ( isset($params['price']) && $params['price'] != 0  ) {
@@ -2731,6 +2736,12 @@ class Grid_Constructor extends SiteBill_Krascap {
     		$where_array[] = ' re_data.hot = 1 ';
     		$QB->addCondition(DB_PREFIX.'_data.hot', '=', 1);
     	}
+
+        if ( isset($params['hot2']) ) {
+            $where_array[] = ' re_data.hot2 = 1 ';
+            $QB->addCondition(DB_PREFIX.'_data.hot2', '=', 1);
+        }
+
     	if ( isset($params['city_id']) and $params['city_id'] != 0  ) {
     		$where_array[] = 're_data.city_id = '.$params['city_id'];
     		$QB->addCondition(DB_PREFIX.'_data.city_id', '=', $params['city_id']);
@@ -4167,6 +4178,13 @@ class Grid_Constructor extends SiteBill_Krascap {
     	}else{
     			unset($params['onlyspecial']);
     		}
+
+        if ( isset($params['onlyspecial2']) && (int)$params['onlyspecial2'] > 0  ) {
+            $where_array[] = 're_data.hot2 = 1';
+            $where_array_prepared[]='('.DB_PREFIX.'_data.hot2=1)';
+        }else{
+                unset($params['onlyspecial2']);
+            }
     	
     	
     	if ( isset($params['price']) && $params['price'] != 0  ) {
@@ -4272,6 +4290,12 @@ class Grid_Constructor extends SiteBill_Krascap {
     	}else{
     		unset($params['hot']);
     	}
+        if ( isset($params['hot2']) && $params['hot2']!='' ) {
+            $where_array[] = ' re_data.hot2 = 1 ';
+            $where_array_prepared[]='('.DB_PREFIX.'_data.hot2=1)';
+        }else{
+            unset($params['hot2']);
+        }
     	
     	
     	

@@ -1,10 +1,30 @@
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 16:24:59
+         compiled from "Z:/home/anseverv2/www/template/frontend/agency\layout_basic.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:209245523945ba37934-17720213%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '4b8ff6e510854792833a317165e25cdd8351ebd7' => 
+    array (
+      0 => 'Z:/home/anseverv2/www/template/frontend/agency\\layout_basic.tpl',
+      1 => 1428395090,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '209245523945ba37934-17720213',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
 <div id="content">
-            {include file="top_fixed_menu.tpl.html"}
+            <?php $_template = new Smarty_Internal_Template("top_fixed_menu.tpl.html", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
     
 
 		<div class="maincontent">
 
-			{if $geodata_on_home}
+			<?php if ($_smarty_tpl->getVariable('geodata_on_home')->value){?>
 
 
 			<div id="slides">
@@ -75,8 +95,10 @@
 			</td>
 			</tr>
 			</table>
-				<div id="tabs-services-special">{$L_TABS_SPECIAL}</div>
-                <!-- {include file="map.tpl"}-->
+				<div id="tabs-services-special"><?php echo $_smarty_tpl->getVariable('L_TABS_SPECIAL')->value;?>
+</div>
+                <!-- <?php $_template = new Smarty_Internal_Template("map.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>-->
             <div class="clear"></div>
 
             <br/>
@@ -95,7 +117,8 @@
 			</td>
 			</tr>
 			</table>
-				<div id="tabs-services-special2">{$L_TABS_SPECIAL2}</div>
+				<div id="tabs-services-special2"><?php echo $_smarty_tpl->getVariable('L_TABS_SPECIAL2')->value;?>
+</div>
 						<table>
 				<tr>
 					<td>
@@ -155,23 +178,26 @@
 
 			</table>
 		</div>
-			{else}
+			<?php }else{ ?>
 			
-				{if $main_file_tpl != ''}
+				<?php if ($_smarty_tpl->getVariable('main_file_tpl')->value!=''){?>
 				     <div class="clear"></div>
-				    {include file="$main_file_tpl"}
-				{else}
-					{$main}
-				{/if}
+				    <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('main_file_tpl')->value), $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
+				<?php }else{ ?>
+					<?php echo $_smarty_tpl->getVariable('main')->value;?>
 
-			{/if}
+				<?php }?>
+
+			<?php }?>
 			<div class="clear"></div>
 			<br><br>
 
 
 		<div class="clear"></div>
 	</div>	
-{include file="footer.tpl"}	
+<?php $_template = new Smarty_Internal_Template("footer.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>	
 
 <script type="text/javascript">
 $(document).ready(function(){
