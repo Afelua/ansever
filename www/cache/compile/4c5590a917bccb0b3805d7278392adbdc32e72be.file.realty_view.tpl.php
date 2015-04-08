@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 15:55:13
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-08 16:57:33
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_view.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3022855238d61db5600-71806989%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:185415524ed7d13b269-67622177%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4c5590a917bccb0b3805d7278392adbdc32e72be' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_view.tpl',
-      1 => 1427644311,
+      1 => 1428483448,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3022855238d61db5600-71806989',
+  'nocache_hash' => '185415524ed7d13b269-67622177',
   'function' => 
   array (
   ),
@@ -198,10 +198,32 @@ $(document).ready(function(){
 
 <div class="row-fluid">
     <div class="span12 green">
-            <?php if (isset($_smarty_tpl->getVariable('data',null,true,false)->value['text'])&&$_smarty_tpl->getVariable('data')->value['text']['value']!=''){?>
-                <h1><?php echo $_smarty_tpl->getVariable('data')->value['text']['value'];?>
-</h1>
-            <?php }?>
+    	<h1>
+
+    	<?php if ($_smarty_tpl->getVariable('data')->value['topic_id']['value']==1){?>
+    		Аренда
+    	<?php }?>
+    	<?php if ($_smarty_tpl->getVariable('data')->value['topic_id']['value']==2){?>
+    		Продажа
+    	<?php }?>
+
+    	<?php if (isset($_smarty_tpl->getVariable('data',null,true,false)->value['room_count']['value'])&&$_smarty_tpl->getVariable('data')->value['room_count']['value']!=''){?>
+ 			<?php echo $_smarty_tpl->getVariable('data')->value['room_count']['value'];?>
+ комнатной квартиры, 
+ 		<?php }?>
+
+ 		<?php if (isset($_smarty_tpl->getVariable('data',null,true,false)->value['district_id']['value_string'])&&$_smarty_tpl->getVariable('data')->value['district_id']['value_string']!=''){?>
+ 			<?php echo $_smarty_tpl->getVariable('data')->value['district_id']['value_string'];?>
+ район,
+ 		<?php }?>
+
+ 		<?php if (isset($_smarty_tpl->getVariable('data',null,true,false)->value['metro_id']['value_string'])&&$_smarty_tpl->getVariable('data')->value['metro_id']['value_string']!=''){?>
+ 			м. <?php echo $_smarty_tpl->getVariable('data')->value['metro_id']['value_string'];?>
+
+ 		<?php }?>
+    	 
+    	</h1>
+
 
     </div>
 </div>
@@ -276,8 +298,7 @@ $('#thumbs').delegate('img','click', function(){
 
 	<div class="row-fluid">
     	<div class="price">
-    	<?php echo $_smarty_tpl->getVariable('data')->value['room_count']['value'];?>
- к. кв., <?php echo number_format($_smarty_tpl->getVariable('data')->value['price']['value'],0,","," ");?>
+    	<?php echo number_format($_smarty_tpl->getVariable('data')->value['price']['value'],0,","," ");?>
  <?php if ($_smarty_tpl->getVariable('data')->value['currency_id']['value_string']!=''){?><?php echo $_smarty_tpl->getVariable('data')->value['currency_id']['value_string'];?>
 <?php }else{ ?><?php echo $_smarty_tpl->getVariable('L_RUR_SHORT')->value;?>
 <?php }?></div>
@@ -393,7 +414,7 @@ $_template->assign('title_data',array($_smarty_tpl->getVariable('data')->value['
 
     <?php if (isset($_smarty_tpl->getVariable('data',null,true,false)->value['district_id']['value_string'])&&$_smarty_tpl->getVariable('data')->value['district_id']['value_string']!=''){?>
     <?php echo $_smarty_tpl->getVariable('data')->value['district_id']['value_string'];?>
- р-ой, 
+ р-он, 
     <?php }?>
 
     <?php if (isset($_smarty_tpl->getVariable('data',null,true,false)->value['street_id']['value_string'])&&$_smarty_tpl->getVariable('data')->value['street_id']['value_string']!=''){?>

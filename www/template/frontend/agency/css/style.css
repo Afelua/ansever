@@ -320,7 +320,7 @@ td {
 
 
 .contact_div .cdetails .ffio {
-	color: #74AA33;
+	color: #1FA741;
 }
 
 .contact_div .photo {
@@ -1743,10 +1743,10 @@ max-height: 75px;*/
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
-	background: none repeat scroll 0% 0% rgb(116, 170, 51);
-	color: rgb(34, 65, 85);
-	font-size: 16px;
-	padding: 10px;
+	background: none repeat scroll 0% 0% #1FA741;
+	color: #fff;
+	font-size: 12px;
+	padding: 5px;
 }
 
 .t_i_title p {
@@ -1980,7 +1980,7 @@ a.showall{
 
 
 a.showall:hover{
-	background: none repeat scroll 0% 0% #74AA33;
+	background: none repeat scroll 0% 0% #1FA741;
 }
 
 .nameSpecial{
@@ -2184,7 +2184,7 @@ div.footer_Big a{
 #panel { position: relative;width: 420px; }
 
 .green{
-	background: none repeat scroll 0% 0% rgb(116, 170, 51);
+	background: none repeat scroll 0% 0% #1FA741;
 }
 
 .green h1{
@@ -2198,6 +2198,7 @@ div.footer_Big a{
 
 	color: rgb(34, 65, 85);
 	margin: 20px 0px;
+	border-color: rgb(34, 65, 85);
 }
 
 .realty_view_distance{
@@ -2396,16 +2397,16 @@ div.footer_Big a{
 	position: absolute;
 	left: 423px;
 	top: 200px;
-	background: none repeat scroll 0% 0% #74AA33;
+	background: none repeat scroll 0% 0% #1FA741;
 	padding: 6px 11px;
 	color: #FFF;
 	font-size: 14px;
 	text-transform: uppercase;
 }
 
-.slider_link:hover{
+.slider_link:hover, .slider_link:focus, .slider_link:active{
 
-	color: #FFF;
+	color: #333;
 	text-decoration: none;
 }
 
@@ -2460,9 +2461,13 @@ div.footer_Big a{
 
 .phone_faq{
 
-	background: #74AA33;
+	background: #1FA741;
 	padding: 15px 44px;
 	color: #fff;
+}
+
+a.phone_faq:hover, a.phone_faq:focus, a.phone_faq:active{
+	color: #333;
 }
 
 .faq_list{
@@ -2517,4 +2522,13 @@ div.footer_Big a{
 .contact_info_contactus a, .contact_info_contactus a:hover {
 
 	color: #666;
+}
+
+.greenTitle{
+
+	color: #1FA741;
+}
+
+.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1024px;
 }

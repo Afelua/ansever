@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 02:13:29
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-08 17:06:46
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\top_fixed_menu.tpl.html" */ ?>
-<?php /*%%SmartyHeaderCode:46455522ccc99c82c2-37017075%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:128955524efa684a665-39603160%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '8fbcdf5872b2b6388848b143d54fef007adedbbd' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\top_fixed_menu.tpl.html',
-      1 => 1426936445,
+      1 => 1428484001,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '46455522ccc99c82c2-37017075',
+  'nocache_hash' => '128955524efa684a665-39603160',
   'function' => 
   array (
   ),
@@ -22,18 +22,19 @@ $_smarty_tpl->decodeProperties(array (
 		<div class="container">
 			<table width="100%;">
 			<tr>
-			<td width="28%">
-				<b>Наш офис:</b> м. Василеостровская <br>
+			<td width="33%">
+				<b>Наш офис:</b> <span class= "greenTitle" >м. Василеостровская </span><br>
 				Санкт-Петербург, ВО 6-линия д.43 
 
 			</td>
 
-			<td width="44%" style="text-align: center;">
+			<td width="34%" style="text-align: center;">
 				<img src="/img/logo1.png">
 			</td>
 
-			<td width="28%" style="text-align: right;">
-				<b>Нужна помощь?</b> Звоните <a href="tel:+7 (812) 327-49-79">(812) 327-49-79</a> <br>
+			<td width="33%" style="text-align: right;">
+				Нужна помощь?<b> <br>
+				Звоните: <a href="tel:+7 (812) 327-49-79">(812) 327-49-79</a> </b> <br>
 				или <span style="text-decoration:underline">оставьте заявку</span>
 
 			</td>

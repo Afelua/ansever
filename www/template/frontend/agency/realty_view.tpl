@@ -167,9 +167,29 @@ $(document).ready(function(){
 
 <div class="row-fluid">
     <div class="span12 green">
-            {if isset($data.text) && $data.text.value != ''}
-                <h1>{$data.text.value}</h1>
-            {/if}
+    	<h1>
+
+    	{if $data.topic_id.value == 1}
+    		Аренда
+    	{/if}
+    	{if $data.topic_id.value == 2}
+    		Продажа
+    	{/if}
+
+    	{if isset($data.room_count.value) && $data.room_count.value != ''}
+ 			{$data.room_count.value} комнатной квартиры, 
+ 		{/if}
+
+ 		{if isset($data.district_id.value_string) && $data.district_id.value_string != ''}
+ 			{$data.district_id.value_string} район,
+ 		{/if}
+
+ 		{if isset($data.metro_id.value_string) && $data.metro_id.value_string != ''}
+ 			м. {$data.metro_id.value_string}
+ 		{/if}
+    	 
+    	</h1>
+
 
     </div>
 </div>
@@ -217,7 +237,7 @@ $('#thumbs').delegate('img','click', function(){
 
 	<div class="row-fluid">
     	<div class="price">
-    	{$data.room_count.value} к. кв., {$data.price.value|number_format:0:",":" "} {if $data.currency_id.value_string != ''}{$data.currency_id.value_string}{else}{$L_RUR_SHORT}{/if}</div>
+    	{$data.price.value|number_format:0:",":" "} {if $data.currency_id.value_string != ''}{$data.currency_id.value_string}{else}{$L_RUR_SHORT}{/if}</div>
 	</div>
 	<hr class="price_hr">
 
@@ -307,7 +327,7 @@ $('#thumbs').delegate('img','click', function(){
     {/if}
 
     {if isset($data.district_id.value_string) && $data.district_id.value_string != ''}
-    {$data.district_id.value_string} р-ой, 
+    {$data.district_id.value_string} р-он, 
     {/if}
 
     {if isset($data.street_id.value_string) && $data.street_id.value_string != ''}
