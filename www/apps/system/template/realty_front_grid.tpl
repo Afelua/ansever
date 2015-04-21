@@ -175,7 +175,7 @@ system
 				var myPlacemark = new ymaps.Placemark(
 						latlng,
 						{
-							iconContent: realty_geo_data[o].id
+							iconContent: realty_geo_data[o].id + ' '+ realty_geo_data[o].sh
 						},
 						{
 							draggable: false,

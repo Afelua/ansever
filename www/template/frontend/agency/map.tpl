@@ -1,4 +1,14 @@
-<script src="{$estate_folder}/apps/system/js/json2.js" type="text/javascript"></script>
+<script src="{$estate_folder}/apps/system/js/realtymap.js" type="text/javascript"></script>
+<script>
+var loc_objects={$geoobjects_collection_clustered};
+var map_type='{$map_type}';
+{literal}
+$(document).ready(function(){
+var RM=new RealtyMap();
+RM.initJSON('grid_realty_map', loc_objects, map_type);
+});
+{/literal}
+</script>
 
 <script type="text/javascript">
 //var d = '{$_geo_data}'; 
@@ -150,7 +160,7 @@ var objects=[];
 				var myPlacemark = new ymaps.Placemark(
 						latlng,
 						{
-							iconContent: realty_geo_data[o].id
+							iconContent: realty_geo_data[o].id + '' + realty_geo_data[o].sh
 						},
 						{
 							draggable: false,

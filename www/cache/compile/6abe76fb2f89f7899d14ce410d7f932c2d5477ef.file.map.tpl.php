@@ -1,24 +1,36 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 02:13:29
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-21 18:36:20
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\map.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:122825522ccc9b0c682-81178678%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:30266553628240ad242-09363789%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6abe76fb2f89f7899d14ce410d7f932c2d5477ef' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\map.tpl',
-      1 => 1428342490,
+      1 => 1429612573,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '122825522ccc9b0c682-81178678',
+  'nocache_hash' => '30266553628240ad242-09363789',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
 <script src="<?php echo $_smarty_tpl->getVariable('estate_folder')->value;?>
-/apps/system/js/json2.js" type="text/javascript"></script>
+/apps/system/js/realtymap.js" type="text/javascript"></script>
+<script>
+var loc_objects=<?php echo $_smarty_tpl->getVariable('geoobjects_collection_clustered')->value;?>
+;
+var map_type='<?php echo $_smarty_tpl->getVariable('map_type')->value;?>
+';
+
+$(document).ready(function(){
+var RM=new RealtyMap();
+RM.initJSON('grid_realty_map', loc_objects, map_type);
+});
+
+</script>
 
 <script type="text/javascript">
 //var d = '<?php echo $_smarty_tpl->getVariable('_geo_data')->value;?>
@@ -173,7 +185,7 @@ var objects=[];
 				var myPlacemark = new ymaps.Placemark(
 						latlng,
 						{
-							iconContent: realty_geo_data[o].id
+							iconContent: realty_geo_data[o].id + '' + realty_geo_data[o].sh
 						},
 						{
 							draggable: false,

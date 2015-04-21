@@ -1015,7 +1015,7 @@ class Data_Manager extends Object_Manager {
 	    				$grid_geodata[]=array(
 	    						'lat'=>$item_array['geo']['value']['lat'],
 	    						'lng'=>$item_array['geo']['value']['lng'],
-	    						'id'=>$item_array['id']['value']
+	    						'id'=>$item_array['id']['value'],
 	    				);
 	    			}
 	    			$ret[$item_id]['date'] = date('d.m',strtotime($ret[$item_id]['date_added']['value']));
@@ -1032,7 +1032,7 @@ class Data_Manager extends Object_Manager {
     			$grid_geodata[]=array(
     					'lat'=>$item_array['geo_lat'],
     					'lng'=>$item_array['geo_lng'],
-    					'id'=>$item_array['id']
+    					'id'=>$item_array['id'],
     			);
     		}
     		if ( $item_array['country_id'] > 0 ) {
