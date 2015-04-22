@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 16:07:30
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 02:18:57
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:210605523904266eaa8-76557568%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:103185537e611a32ad9-15248528%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '5e2f81a9ab9f31208edf3c62302921d066a1683a' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid.tpl',
-      1 => 1428394045,
+      1 => 1429726658,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '210605523904266eaa8-76557568',
+  'nocache_hash' => '103185537e611a32ad9-15248528',
   'function' => 
   array (
   ),
@@ -25,18 +25,15 @@ $_smarty_tpl->decodeProperties(array (
 
 <?php $_smarty_tpl->tpl_vars["lang_topic_name"] = new Smarty_variable("name_".($_SESSION['_lang']), null, null);?>
 
-
-
-
-
-
-    <?php $_template = new Smarty_Internal_Template('realty_grid_thumbs.tpl.html', $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+<?php $_template = new Smarty_Internal_Template('realty_grid_thumbs.tpl.html', $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
 
 <?php if ($_smarty_tpl->getVariable('main_file_tpl')->value!=''){?>
     <div class="right_catalog">
 
     <!--a onclick="hidetxt(); return false;" href="#" rel="nofollow">Ссылка 1</a-->
+    <?php $_template = new Smarty_Internal_Template("realty_grid_thumbs_map.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
 
     <div class="row-fluid">
     	<div class="span6 button_take_off">

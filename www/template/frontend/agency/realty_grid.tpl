@@ -5,17 +5,13 @@
 
 {assign var="lang_topic_name" value="name_{$smarty.session._lang}"}
 
-
-
-
-
-
-    {include file='realty_grid_thumbs.tpl.html'}
+{include file='realty_grid_thumbs.tpl.html'}
 
 {if $main_file_tpl != ''}
     <div class="right_catalog">
 
     <!--a onclick="hidetxt(); return false;" href="#" rel="nofollow">Ссылка 1</a-->
+    {include file="realty_grid_thumbs_map.tpl"}
 
     <div class="row-fluid">
     	<div class="span6 button_take_off">

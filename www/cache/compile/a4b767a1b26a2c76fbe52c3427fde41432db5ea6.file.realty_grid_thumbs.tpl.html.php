@@ -1,25 +1,33 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-21 17:31:40
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 02:24:00
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid_thumbs.tpl.html" */ ?>
-<?php /*%%SmartyHeaderCode:30727553618fce88841-44813341%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:298275537e740c108e2-62643150%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a4b767a1b26a2c76fbe52c3427fde41432db5ea6' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid_thumbs.tpl.html',
-      1 => 1429608659,
+      1 => 1429727017,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '30727553618fce88841-44813341',
+  'nocache_hash' => '298275537e740c108e2-62643150',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
 <?php if (!is_callable('smarty_modifier_truncate')) include 'Z:\home\anseverv2\www\third\smarty\plugins\modifier.truncate.php';
-?><?php $_template = new Smarty_Internal_Template("map.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
- echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
+?><!--div>
+ <a href="" class="spoiler_links search_list">Выбрать метро</a>
+ <div class="spoiler_body">
+<div class="select_box_td"><?php $_template = new Smarty_Internal_Template('realty_grid_thumbs_map.tpl', $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?></div>
+ </div>
+</div-->
+
+
+
 
 <div class="grid">
 	<?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);

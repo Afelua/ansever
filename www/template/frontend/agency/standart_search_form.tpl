@@ -10,7 +10,7 @@
 				<input type="hidden" name="extended_search" value="1" />
 <table border="0" cellspacing="0" cellpadding="0" width="270">
 
-<tr style="display:none;">
+<tr style="">
 	<td colspan="4">{$structure_box}</td>
 </tr>
 

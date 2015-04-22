@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 15:53:52
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 02:18:58
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid_thumbs_what.html" */ ?>
-<?php /*%%SmartyHeaderCode:1330255238d10ebc8a1-28513131%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:26845537e6120dc231-86986124%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '69d2c6ce3a570d6cc38d1d4c66de2af3a2a14d9b' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid_thumbs_what.html',
-      1 => 1427744387,
+      1 => 1429726658,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1330255238d10ebc8a1-28513131',
+  'nocache_hash' => '26845537e6120dc231-86986124',
   'function' => 
   array (
   ),
@@ -49,7 +49,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 	<?php endfor; endif; ?>
 <div>
 <?php if ($_smarty_tpl->getVariable('a')->value==1){?>
-<div class="questions_specialist">АРЕНДА</div>
+<div class="questions_specialist">ПРОДАЖА</div>
 <div class="min_price">Минимальные цены по районам</div>
 <br>
 <div class="flat">

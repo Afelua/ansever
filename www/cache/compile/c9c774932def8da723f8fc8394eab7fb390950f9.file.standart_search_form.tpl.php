@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 15:53:52
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 02:36:32
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\standart_search_form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2117655238d1099bf71-79310786%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:146875537ea307a3ba3-03464783%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c9c774932def8da723f8fc8394eab7fb390950f9' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\standart_search_form.tpl',
-      1 => 1427878044,
+      1 => 1429727786,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2117655238d1099bf71-79310786',
+  'nocache_hash' => '146875537ea307a3ba3-03464783',
   'function' => 
   array (
   ),
@@ -31,7 +31,7 @@ $_smarty_tpl->decodeProperties(array (
 				<input type="hidden" name="extended_search" value="1" />
 <table border="0" cellspacing="0" cellpadding="0" width="270">
 
-<tr style="display:none;">
+<tr style="">
 	<td colspan="4"><?php echo $_smarty_tpl->getVariable('structure_box')->value;?>
 </td>
 </tr>
