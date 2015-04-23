@@ -23,6 +23,6 @@
     </script>
 </head>
 <body>
-<div id="map" style="width:600px;height:400px"></div>
+<a href="#" onclick="hiddenShow();" id="but"><span id="text_map_open">Открыть</span> карту аренды</a>
 </body>
 </html>

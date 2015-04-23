@@ -7,7 +7,7 @@
     <script type="text/javascript">
         window.onload = function () { 
             ymaps.ready(function () {
-                var myMap = new ymaps.Map('map2', {
+                var myMap = new ymaps.Map('map', {
                         center: [55.76, 37.64],
                         zoom: 8
                     }),
@@ -23,7 +23,6 @@
     </script>
 </head>
 <body>
-
-<div id="map2" style="width:600px;height:400px"></div>
+<a href="#" onclick="hiddenShow();" id="but"><span id="text_map_open">Открыть</span> карту продажи</a>
 </body>
 </html>

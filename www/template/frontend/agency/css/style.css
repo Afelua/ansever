@@ -114,7 +114,7 @@ img {
 }
 
 #search_main table {
-	min-width: 270px;
+	max-width: 270px;
 }
 
 #search_main table td{
@@ -717,14 +717,11 @@ div.bottom {
 }
 
 h1 {
-	text-align: left;
 	margin: 0px 0px 0px 0px;
-	color: #ED7E22;
-	font-weight: bold;
-	font-size: 17px;
-	padding-left: 0px;
-	padding-bottom: 10px;
-	line-height: 20px;
+  	color: #fff;
+  	font-weight: normal;
+  	font-size: 20px;
+  	text-align: center;
 }
 
 h2 {
@@ -765,7 +762,12 @@ td.sch_button {
 
 td.sch_button input[type="submit"] {
 	font-size: 18px;
-	background-image: linear-gradient(to bottom, rgb(73, 154, 184), rgb(56, 119, 153));
+	background: #224155;
+    background: -moz-linear-gradient(to bottom, rgb(73, 154, 184), rgb(56, 119, 153));
+    background: -webkit-linear-gradient(to bottom, rgb(73, 154, 184), rgb(56, 119, 153));
+    background: -o-linear-gradient(to bottom, rgb(73, 154, 184), rgb(56, 119, 153));
+    background: -ms-linear-gradient(to bottom, rgb(73, 154, 184), rgb(56, 119, 153));
+    background: linear-gradient(to bottom, rgb(73, 154, 184), rgb(56, 119, 153));
 	padding: 9px 83px;
 }
 
@@ -2001,10 +2003,10 @@ a.showall:hover{
   	padding: 0px 310px 8px 30px;
 }
 
-table{
+/* table{
 	min-width: 800px;
 }
-
+*/
 .allview{
 
 	font-size: 16px;
@@ -2070,6 +2072,7 @@ div.footer_Big a{
  .full_Page{
  	width: 710px;
 	float: left;
+	height: 200px;
 
  }
 
@@ -2531,4 +2534,34 @@ a.phone_faq:hover, a.phone_faq:focus, a.phone_faq:active{
 
 .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 1024px;
+}
+
+.hidden {
+	position: absolute; 
+	visibility: hidden;
+}
+.visible { 
+	visibility: visible; 
+	-webkit-animation:fade ease-in 0.5s; 
+    -moz-animation:fade ease-in 0.5s;
+    animation:fade ease-in 0.5s; 
+}
+
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+
+
+#s1{
+	padding-top: 11px;
 }

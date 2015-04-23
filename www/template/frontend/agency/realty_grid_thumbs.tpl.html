@@ -1,14 +1,13 @@
-<!--div>
- <a href="" class="spoiler_links search_list">Выбрать метро</a>
- <div class="spoiler_body">
-<div class="select_box_td">{include file='realty_grid_thumbs_map.tpl'}</div>
- </div>
-</div-->
-
-
-
+<div id="s1" class="hidden">
+    <div id="map" style="width:690px;height:400px"></div>
+</div>
 
 <div class="grid">
+{if !$grid_items}
+<br>
+<div class="title_faq_label">Квартиры на вашему запросу не найдены</div>
+{/if}
+
 	{section name=i loop=$grid_items}
 	<a
 				href="{if $grid_items[i].url!=''}{$grid_items[i].url}{else}{$grid_items[i].href}{/if}"
@@ -39,19 +38,108 @@
 
 		<div class="t_i_title">
 			{if $grid_items[i].metro!=''}
-				{if $grid_items[i].metro=='Курская'}
-				<p class="circle" style="background:red;"></p>
-				<p class="listitemmetro" style="color:red;">
+				{if $grid_items[i].metro=='Девяткино' || 
+				$grid_items[i].metro=='Гражданский проспект' || 
+				$grid_items[i].metro=='Академическая' || 
+				$grid_items[i].metro=='Политехническая' ||
+				$grid_items[i].metro=='Площадь Мужества' || 
+				$grid_items[i].metro=='Лесная' ||
+				$grid_items[i].metro=='Выборгская' || 
+				$grid_items[i].metro=='Площадь Ленина' ||
+				$grid_items[i].metro=='Чернышевская' || 
+				$grid_items[i].metro=='Площадь Восстания' ||
+				$grid_items[i].metro=='Владимирская' || 
+				$grid_items[i].metro=='Пушкинская' ||
+				$grid_items[i].metro=='Технологический институт' || 
+				$grid_items[i].metro=='Балтийская' ||
+				$grid_items[i].metro=='Нарвская' || 
+				$grid_items[i].metro=='Кировский завод' ||
+				$grid_items[i].metro=='Автово' || 
+				$grid_items[i].metro=='Девяткино' ||
+				$grid_items[i].metro=='Ленинский проспект' || 
+				$grid_items[i].metro=='Проспект Ветеранов'
+				}
+				<p class="circle" style="background:#ff0033;"></p>
+				<p class="listitemmetro" style="color:#ff0033;">
 					<span>{$grid_items[i].metro}</span>
 				</p>
 				{/if}
 
-				{if $grid_items[i].metro=='Крымская'}
-				<p class="circle" style="background:green;"></p>
-				<p class="listitemmetro" style="color:green;">
+				{if $grid_items[i].metro=='Парнас' ||
+				$grid_items[i].metro=='Проспект Просвещения' || 
+				$grid_items[i].metro=='Озерки' || 
+				$grid_items[i].metro=='Удельная' ||
+				$grid_items[i].metro=='Пионерская' || 
+				$grid_items[i].metro=='Чёрная речка' ||
+				$grid_items[i].metro=='Петроградская' || 
+				$grid_items[i].metro=='Горьковская' ||
+				$grid_items[i].metro=='Невский проспект' || 
+				$grid_items[i].metro=='Сенная площадь' ||
+				$grid_items[i].metro=='Фрунзенская' || 
+				$grid_items[i].metro=='Московские ворота' ||
+				$grid_items[i].metro=='Электросила' || 
+				$grid_items[i].metro=='Парк Победы' ||
+				$grid_items[i].metro=='Московская' || 
+				$grid_items[i].metro=='Звездная' ||
+				$grid_items[i].metro=='Купчино' 
+				}
+				<p class="circle" style="background:#0066cc;"></p>
+				<p class="listitemmetro" style="color:#0066cc;">
 					<span>{$grid_items[i].metro}</span>
 				</p>
 				{/if}
+
+
+				{if $grid_items[i].metro=='Приморская' ||
+				$grid_items[i].metro=='Василеостровская' || 
+				$grid_items[i].metro=='Гостиный двор' || 
+				$grid_items[i].metro=='Маяковская' ||
+				$grid_items[i].metro=='Площадь Александра Невского' || 
+				$grid_items[i].metro=='Елизаровская' ||
+				$grid_items[i].metro=='Ломоносовская' || 
+				$grid_items[i].metro=='Пролетарская' ||
+				$grid_items[i].metro=='Обухово' || 
+				$grid_items[i].metro=='Рыбацкое' 
+				}
+				<p class="circle" style="background:#009966;"></p>
+				<p class="listitemmetro" style="color:#009966;">
+					<span>{$grid_items[i].metro}</span>
+				</p>
+				{/if}
+
+				{if $grid_items[i].metro=='Спасская' ||
+				$grid_items[i].metro=='Достоевская' || 
+				$grid_items[i].metro=='Лиговский проспект' || 
+				$grid_items[i].metro=='Новочеркасская' ||
+				$grid_items[i].metro=='Ладожская' || 
+				$grid_items[i].metro=='Проспект Большевиков' ||
+				$grid_items[i].metro=='Улица Дыбенко' 
+				}
+				<p class="circle" style="background:#ff6600;"></p>
+				<p class="listitemmetro" style="color:#ff6600;">
+					<span>{$grid_items[i].metro}</span>
+				</p>
+				{/if}
+
+				{if $grid_items[i].metro=='Комендантский проспект' ||
+				$grid_items[i].metro=='Старая Деревня' || 
+				$grid_items[i].metro=='Крестовский остров' || 
+				$grid_items[i].metro=='Чкаловская' ||
+				$grid_items[i].metro=='Спортивная' || 
+				$grid_items[i].metro=='Адмиралтейская' ||
+				$grid_items[i].metro=='Садовая' ||
+				$grid_items[i].metro=='Звенигородская' ||
+				$grid_items[i].metro=='Обводный канал' || 
+				$grid_items[i].metro=='Волковская' ||
+				$grid_items[i].metro=='Бухарестская' ||		
+				$grid_items[i].metro=='Международная'		
+				}
+				<p class="circle" style="background:#663399;"></p>
+				<p class="listitemmetro" style="color:#663399;">
+					<span>{$grid_items[i].metro}</span>
+				</p>
+				{/if}
+
 
 			{/if}
 
@@ -110,3 +198,25 @@
 
 
 
+<script type="text/javascript">
+var div = document.getElementById('s1');
+function hiddenShow()
+{
+   if (div.className == 'hidden')
+   {
+      div.className='visible';
+      document.getElementById("text_map_open").innerHTML="Закрыть"
+   } else {
+      div.className='hidden';
+      document.getElementById("text_map_open").innerHTML="Открыть"
+   }
+}
+function hide(evt)
+{
+   if (evt.target != document.getElementById('but'))
+   {
+      div.className='hidden';
+   }
+}
+
+</script>

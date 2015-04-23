@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 02:42:28
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 19:02:13
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid_thumbs_map.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:153005537eb94128e35-23080954%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13945538d1352f2357-04890444%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '8bd11872edd32aa998c4f0badfda36d61cde5e9c' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid_thumbs_map.tpl',
-      1 => 1429728143,
+      1 => 1429786929,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '153005537eb94128e35-23080954',
+  'nocache_hash' => '13945538d1352f2357-04890444',
   'function' => 
   array (
   ),
@@ -49,12 +49,10 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 	<?php endfor; endif; ?>
 <div>
 <?php if ($_smarty_tpl->getVariable('a')->value==1){?>
-Продажа
      <?php $_template = new Smarty_Internal_Template("map-sell.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>          
 <?php }?>
 <?php if ($_smarty_tpl->getVariable('a')->value==2){?>
-Аренда
 	<?php $_template = new Smarty_Internal_Template("map-arenda.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
 <?php }?>

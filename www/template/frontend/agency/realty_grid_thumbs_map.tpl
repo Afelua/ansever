@@ -7,11 +7,9 @@
 	{/section}
 <div>
 {if $a==1}
-Продажа
      {include file="map-sell.tpl"}          
 {/if}
 {if $a==2}
-Аренда
 	{include file="map-arenda.tpl"}
 {/if}
 </div>

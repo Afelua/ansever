@@ -1,5 +1,23 @@
 <script src="{$estate_folder}/apps/system/js/json2.js" type="text/javascript"></script>
 
+{section name=i loop=$grid_items}
+	{if $grid_items[i].type_sh=='Продажа квартир'}
+	{$a=1}
+	{else if $grid_items[i].type_sh=='Аренда квартир'}
+	{$a=2}
+	{/if}
+{/section}
+<div id="tabs_faq_all_label">
+<h1>
+{if $a==1}   
+	Продажа квартир и комнат  
+{/if}
+{if $a==2}
+	Аренда квартир и комнат
+{/if}
+</h1>
+</div>
+
 <div class="full_Page">
 
 
@@ -10,7 +28,6 @@
 {if $main_file_tpl != ''}
     <div class="right_catalog">
 
-    <!--a onclick="hidetxt(); return false;" href="#" rel="nofollow">Ссылка 1</a-->
     {include file="realty_grid_thumbs_map.tpl"}
 
     <div class="row-fluid">

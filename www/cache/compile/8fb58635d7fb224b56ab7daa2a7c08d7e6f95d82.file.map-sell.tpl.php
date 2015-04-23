@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 02:45:24
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 19:02:33
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\map-sell.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:288635537ec4491c6c7-37161134%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:321695538d149bcc860-12486948%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '8fb58635d7fb224b56ab7daa2a7c08d7e6f95d82' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\map-sell.tpl',
-      1 => 1429728319,
+      1 => 1429786917,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '288635537ec4491c6c7-37161134',
+  'nocache_hash' => '321695538d149bcc860-12486948',
   'function' => 
   array (
   ),
@@ -26,7 +26,7 @@ $_smarty_tpl->decodeProperties(array (
     <script type="text/javascript">
         window.onload = function () { 
             ymaps.ready(function () {
-                var myMap = new ymaps.Map('map2', {
+                var myMap = new ymaps.Map('map', {
                         center: [55.76, 37.64],
                         zoom: 8
                     }),
@@ -42,7 +42,6 @@ $_smarty_tpl->decodeProperties(array (
     </script>
 </head>
 <body>
-
-<div id="map2" style="width:600px;height:400px"></div>
+<a href="#" onclick="hiddenShow();" id="but"><span id="text_map_open">Открыть</span> карту продажи</a>
 </body>
 </html>
