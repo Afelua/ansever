@@ -35,7 +35,7 @@
     	Снять
     	</div>
     	<div class="span6" style="text-align: center;margin-left: 0px;">
-    	<a href="" class="button_pass">Сдать</a>
+    	<a href="/client/order/pass/" class="button_pass">Сдать</a>
     	</div>
 	</div>
 
@@ -163,3 +163,4 @@ $(document).ready(function(){
  $('#test1').css("display", "none");
 });
 </script>
+

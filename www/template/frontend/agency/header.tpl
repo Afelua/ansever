@@ -8,6 +8,7 @@ var estate_folder = '{$estate_folder}';
 </script>
 <meta name="description" content="{$meta_description}" /> 
 <meta name="keywords" content="{$meta_keywords}" /> 
+<meta name="google-site-verification" content="4YACopS59s-hu0FayMwQbcDvoWpIZEKBZY0GGBcos8Q" />
 <link rel="stylesheet" href="{$estate_folder}/apps/system/js/bootstrap/css/bootstrap.min.css" media="screen">
 
 <!-- <link rel="stylesheet" href="{$estate_folder}/apps/system/js/bootstrap/css/slider.css" media="screen"> -->
@@ -28,7 +29,13 @@ var estate_folder = '{$estate_folder}';
 <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
 <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
 <link rel="stylesheet" type="text/css" href="/css/styles-carousel.css"> <!-- подключаем стилевой файл -->
-
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <!--[if lte IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://sever-new.ru/templates/newLevel/css/lte_ie_8.css" /><![endif]-->
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="http://sever-new.ru/templates/newLevel/css/ie_7.css" />
+            <script src="http://sever-new.ru/templates/newLevel/js/localStorageJSON.js"></script>
+        <![endif]-->
 {literal}
 <!--[if lte IE 7]>
 <style type="text/css">

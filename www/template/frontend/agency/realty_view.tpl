@@ -237,7 +237,14 @@ $('#thumbs').delegate('img','click', function(){
 
 	<div class="row-fluid">
     	<div class="price">
-    	{$data.price.value|number_format:0:",":" "} {if $data.currency_id.value_string != ''}{$data.currency_id.value_string}{else}{$L_RUR_SHORT}{/if}</div>
+    	{$data.price.value|number_format:0:",":" "} 
+
+    	{if $data.topic_id.value == 1}
+			руб/мес
+		{else $data.topic_id.value == 2}
+			руб.
+		{/if}
+    	</div>
 	</div>
 	<hr class="price_hr">
 

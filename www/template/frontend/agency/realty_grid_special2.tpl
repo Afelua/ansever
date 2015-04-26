@@ -57,8 +57,8 @@
 				$grid_items[i].metro=='Ленинский проспект' || 
 				$grid_items[i].metro=='Проспект Ветеранов'
 				}
-				<p class="circle" style="background:#ff0033;"></p>
-				<p class="listitemmetro" style="color:#ff0033;">
+				<p class="circle" style="background:#ff064a;"></p>
+				<p class="listitemmetro" style="color:#ff064a;">
 					<span>{$grid_items[i].metro}</span>
 				</p>
 				{/if}
@@ -81,8 +81,8 @@
 				$grid_items[i].metro=='Звездная' ||
 				$grid_items[i].metro=='Купчино' 
 				}
-				<p class="circle" style="background:#0066cc;"></p>
-				<p class="listitemmetro" style="color:#0066cc;">
+				<p class="circle" style="background:#109eff;"></p>
+				<p class="listitemmetro" style="color:#109eff;">
 					<span>{$grid_items[i].metro}</span>
 				</p>
 				{/if}
@@ -99,8 +99,8 @@
 				$grid_items[i].metro=='Обухово' || 
 				$grid_items[i].metro=='Рыбацкое' 
 				}
-				<p class="circle" style="background:#009966;"></p>
-				<p class="listitemmetro" style="color:#009966;">
+				<p class="circle" style="background:#a7cf1f;"></p>
+				<p class="listitemmetro" style="color:#a7cf1f;">
 					<span>{$grid_items[i].metro}</span>
 				</p>
 				{/if}
@@ -113,8 +113,8 @@
 				$grid_items[i].metro=='Проспект Большевиков' ||
 				$grid_items[i].metro=='Улица Дыбенко' 
 				}
-				<p class="circle" style="background:#ff6600;"></p>
-				<p class="listitemmetro" style="color:#ff6600;">
+				<p class="circle" style="background:#ffb801;"></p>
+				<p class="listitemmetro" style="color:#ffb801;">
 					<span>{$grid_items[i].metro}</span>
 				</p>
 				{/if}

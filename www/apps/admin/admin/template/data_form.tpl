@@ -25,7 +25,6 @@ $(document).ready(function(){
 </script>
 
 <div class="tabbed_form_block">
-
 {if $form_error ne ''}
 	<p class="error">{$form_error}</p>
 {/if}
@@ -207,13 +206,6 @@ $(document).ready(function(){
 {$form_elements.form_footer}
 </div>
 
-<div class="contact_info_contactus">
-	Санкт-Петербург,<br>
-	ВО, 6-линия д.43<br>
-	<span class="bold">Тел.: </span> <a href="tel:+78123097979">+7 (812) 309 79 79</a><br>
-	<span class="bold">Моб: </span> <a href="tel:+79119260175">+7 (911) 926 01 75</a><br>
-	<span class="bold">E-mail: </span> <a href="maitlo:9260175@mail.ru">9260175@mail.ru</a>
-</div>
 
 
 </div>	

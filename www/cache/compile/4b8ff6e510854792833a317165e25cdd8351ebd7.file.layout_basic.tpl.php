@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 18:36:48
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 18:45:00
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\layout_basic.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7940553cbfc0ea9942-57093756%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:31259553cc1acbb05e5-33652608%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4b8ff6e510854792833a317165e25cdd8351ebd7' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\layout_basic.tpl',
-      1 => 1430044605,
+      1 => 1430045097,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7940553cbfc0ea9942-57093756',
+  'nocache_hash' => '31259553cc1acbb05e5-33652608',
   'function' => 
   array (
   ),
@@ -52,15 +52,21 @@ $_smarty_tpl->decodeProperties(array (
 					</div>
 				</div-->
 				<div class="example2 slider_background">
-						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Slide 1">						
+				<a href="/rents">
+						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Аренда квартир">			
+				</a>			
 					</div>
 
 					<div class="example2 slider_background">
-						<img src="/img/slider2.jpg" width="1024" style="height: 250px;" alt="Slide 2">
+					<a href="/contactus">
+						<img src="/img/slider2.jpg" width="1024" style="height: 250px;" alt="Продать квартиру">
+					</a>
 					</div>
 
-					<div class="example2 slider_background">			
-						<img src="/img/slider3.jpg" width="1024" style="height: 250px;" alt="Slide 3"></a>
+					<div class="example2 slider_background">
+					<a href="/sells">			
+						<img src="/img/slider3.jpg" width="1024" style="height: 250px;" alt="Купить квартиру">
+					</a>
 					</div>
 				</div>
 				<a href="#" class="prev"><img src="/img/left-arrow-gray-hi.png" width="24" height="43" alt="Arrow Prev"></a>

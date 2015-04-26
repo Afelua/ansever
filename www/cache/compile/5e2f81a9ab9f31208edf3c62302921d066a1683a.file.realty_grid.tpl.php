@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 21:07:46
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 20:37:00
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:72605538eea2654e81-10701624%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:21905553cdbec4c0564-21522032%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '5e2f81a9ab9f31208edf3c62302921d066a1683a' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid.tpl',
-      1 => 1429794463,
+      1 => 1430051813,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '72605538eea2654e81-10701624',
+  'nocache_hash' => '21905553cdbec4c0564-21522032',
   'function' => 
   array (
   ),
@@ -80,7 +80,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
     	Снять
     	</div>
     	<div class="span6" style="text-align: center;margin-left: 0px;">
-    	<a href="" class="button_pass">Сдать</a>
+    	<a href="/client/order/pass/" class="button_pass">Сдать</a>
     	</div>
 	</div>
 
@@ -213,3 +213,4 @@ $(document).ready(function(){
  $('#test1').css("display", "none");
 });
 </script>
+

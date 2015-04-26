@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 00:52:46
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 20:46:31
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:139395537d1dec27a07-53882344%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:20726553cde27e6f9d9-55292675%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '912e9c879b2d03c531c09574e6949852cb22c318' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\header.tpl',
-      1 => 1429721553,
+      1 => 1430052386,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '139395537d1dec27a07-53882344',
+  'nocache_hash' => '20726553cde27e6f9d9-55292675',
   'function' => 
   array (
   ),
@@ -32,6 +32,7 @@ var estate_folder = '<?php echo $_smarty_tpl->getVariable('estate_folder')->valu
 " /> 
 <meta name="keywords" content="<?php echo $_smarty_tpl->getVariable('meta_keywords')->value;?>
 " /> 
+<meta name="google-site-verification" content="4YACopS59s-hu0FayMwQbcDvoWpIZEKBZY0GGBcos8Q" />
 <link rel="stylesheet" href="<?php echo $_smarty_tpl->getVariable('estate_folder')->value;?>
 /apps/system/js/bootstrap/css/bootstrap.min.css" media="screen">
 
@@ -65,7 +66,13 @@ var estate_folder = '<?php echo $_smarty_tpl->getVariable('estate_folder')->valu
 <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
 <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
 <link rel="stylesheet" type="text/css" href="/css/styles-carousel.css"> <!-- подключаем стилевой файл -->
-
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <!--[if lte IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://sever-new.ru/templates/newLevel/css/lte_ie_8.css" /><![endif]-->
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="http://sever-new.ru/templates/newLevel/css/ie_7.css" />
+            <script src="http://sever-new.ru/templates/newLevel/js/localStorageJSON.js"></script>
+        <![endif]-->
 
 <!--[if lte IE 7]>
 <style type="text/css">

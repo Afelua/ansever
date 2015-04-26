@@ -1920,7 +1920,6 @@ max-height: 75px;*/
 .navbar .nav{
 
 	width: 100%;
-	box-shadow: 0 0 4px rgba(0,0,0,0.5);
 	min-width: 800px;
 }
 
@@ -1932,22 +1931,44 @@ max-height: 75px;*/
 
 .navbar .nav > li > a{
 
-	color: rgb(34, 65, 85);
-	text-decoration: none;
-	padding: 3px 15px;
-	background: none repeat scroll 0% 0% rgb(255, 255, 255);
-	border-right: 1px solid #000;
+color: #fff;
+  text-decoration: none;
+  background: none repeat scroll 0% 0% #109eff;
+  text-shadow: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 8px 14px 2px;
 }
 
+.navbar .nav > li > a[href$="/rents/"]{
+	background-color: #ffb801;
+}
+
+.navbar .nav > li > a[href$="/sells/"]{
+	background-color: #ff064a;
+}
+
+.navbar .nav > li > a[href$="/sells/"]:hover{
+	background-color: #a7cf1f;
+}
+
+.navbar .nav > li > a[href$="/sells/"]:active, a[href$="/sells/"]:focus{
+	background-color: #ffb801;
+}
+
+.navbar .nav > li > a[href$="/client/order/contactus/"]{
+	background-color: #a7cf1f;
+}
 
 .navbar .nav > li > a:hover{
 	color: #fff;
-	background: #6A8697;
+	background: #ff064a;
 }
 
-.navbar .nav > li > a:active{
+.navbar .nav > li > a:active, a:focus{
 	color: #fff;
-	background: #1777D8;
+	background: #a7cf1f;
 }
 
 .maincontent{
@@ -2266,7 +2287,7 @@ div.footer_Big a{
 	text-align: center;
 	font-size: 18px;
 	vertical-align: middle;
-	padding: 9px 40px;
+	padding: 9px 40px 10px;
 	position: relative;
 	top: 8px;
 	background: none repeat scroll 0% 0% rgb(224, 224, 224);
@@ -2513,8 +2534,8 @@ a.phone_faq:hover, a.phone_faq:focus, a.phone_faq:active{
 
 .form-horizontal{
 
-	width: 550px;
-	float: left;
+	margin: 0px auto;
+  	text-align: center;
 }
 
 .bold{
@@ -2599,4 +2620,42 @@ h1 a{
 
 #tab_c1 .news:hover{
 	background-color: transparent;
+}
+
+.btn-primary{
+	color: #FFF;
+	background: none repeat scroll 0% 0% rgb(34, 65, 85);
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 0px;
+	font-size: 16px;
+	padding: 12px;
+}
+
+.btn-primary:hover{
+	background: none repeat scroll 0% 0% #333;
+}
+
+.contact_left1{
+	width: 55%;
+  	float: left;
+  	padding: 10px 20px 0px 10px;
+  	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+.contact_left2{
+	width: 45%;
+  	float: left;
+  	padding: 10px 20px 0px 10px;
+  	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+  	text-align: center;
+}
+
+.contact_left1 .title,.contact_left2 .title{
+	font-size: 20px;
+  	padding-bottom: 15px;
+  	font-weight: normal;
 }

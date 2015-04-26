@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 16:22:45
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 20:11:22
          compiled from "Z:/home/anseverv2/www/apps/admin/admin/template/data_form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:16655552393d5b08cc2-83298601%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:12230553cd5e9f3fe33-17146764%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0789099be98f4ff376774961d5d61c4ede4230e6' => 
     array (
       0 => 'Z:/home/anseverv2/www/apps/admin/admin/template/data_form.tpl',
-      1 => 1427881552,
+      1 => 1430050275,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '16655552393d5b08cc2-83298601',
+  'nocache_hash' => '12230553cd5e9f3fe33-17146764',
   'function' => 
   array (
   ),
@@ -44,7 +44,6 @@ $(document).ready(function(){
 </script>
 
 <div class="tabbed_form_block">
-
 <?php if ($_smarty_tpl->getVariable('form_error')->value!=''){?>
 	<p class="error"><?php echo $_smarty_tpl->getVariable('form_error')->value;?>
 </p>
@@ -345,13 +344,6 @@ if ($_smarty_tpl->_count($_from) > 0){
 
 </div>
 
-<div class="contact_info_contactus">
-	Санкт-Петербург,<br>
-	ВО, 6-линия д.43<br>
-	<span class="bold">Тел.: </span> <a href="tel:+78123097979">+7 (812) 309 79 79</a><br>
-	<span class="bold">Моб: </span> <a href="tel:+79119260175">+7 (911) 926 01 75</a><br>
-	<span class="bold">E-mail: </span> <a href="maitlo:9260175@mail.ru">9260175@mail.ru</a>
-</div>
 
 
 </div>	

@@ -32,15 +32,21 @@
 					</div>
 				</div-->
 				<div class="example2 slider_background">
-						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Slide 1">						
+				<a href="/rents">
+						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Аренда квартир">			
+				</a>			
 					</div>
 
 					<div class="example2 slider_background">
-						<img src="/img/slider2.jpg" width="1024" style="height: 250px;" alt="Slide 2">
+					<a href="/contactus">
+						<img src="/img/slider2.jpg" width="1024" style="height: 250px;" alt="Продать квартиру">
+					</a>
 					</div>
 
-					<div class="example2 slider_background">			
-						<img src="/img/slider3.jpg" width="1024" style="height: 250px;" alt="Slide 3"></a>
+					<div class="example2 slider_background">
+					<a href="/sells">			
+						<img src="/img/slider3.jpg" width="1024" style="height: 250px;" alt="Купить квартиру">
+					</a>
 					</div>
 				</div>
 				<a href="#" class="prev"><img src="/img/left-arrow-gray-hi.png" width="24" height="43" alt="Arrow Prev"></a>

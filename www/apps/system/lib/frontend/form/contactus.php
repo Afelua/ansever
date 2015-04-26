@@ -74,7 +74,8 @@ class contactus_Form extends Object_Manager {
 	 */
 	function getTopMenu () {
 	    $rs = '';
-	    $rs .= '<h1>Напишите нам</h1>';
+	    $rs .= '<div id="tabs_faq_all_label"><h1>Напишите нам</h1>
+</div><br><br>';
 	    return $rs;
 	}
     

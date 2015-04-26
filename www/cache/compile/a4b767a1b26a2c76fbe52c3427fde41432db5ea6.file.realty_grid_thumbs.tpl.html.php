@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 21:34:28
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 19:33:41
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid_thumbs.tpl.html" */ ?>
-<?php /*%%SmartyHeaderCode:290895538f4e40775f0-26547486%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:27025553ccd15109ed4-64681946%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a4b767a1b26a2c76fbe52c3427fde41432db5ea6' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid_thumbs.tpl.html',
-      1 => 1429796064,
+      1 => 1430048016,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '290895538f4e40775f0-26547486',
+  'nocache_hash' => '27025553ccd15109ed4-64681946',
   'function' => 
   array (
   ),
@@ -103,16 +103,16 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 		<div class="t_i_title">
 			<?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']!=''){?>
 				<?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Девяткино'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Гражданский проспект'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Академическая'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Политехническая'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Площадь Мужества'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Лесная'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Выборгская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Площадь Ленина'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Чернышевская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Площадь Восстания'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Владимирская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Пушкинская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Технологический институт'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Балтийская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Нарвская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Кировский завод'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Автово'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Девяткино'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Ленинский проспект'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Проспект Ветеранов'){?>
-				<p class="circle" style="background:#ff0033;"></p>
-				<p class="listitemmetro" style="color:#ff0033;">
+				<p class="circle" style="background:#ff064a;"></p>
+				<p class="listitemmetro" style="color:#ff064a;">
 					<span><?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro'];?>
 </span>
 				</p>
 				<?php }?>
 
 				<?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Парнас'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Проспект Просвещения'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Озерки'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Удельная'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Пионерская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Чёрная речка'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Петроградская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Горьковская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Невский проспект'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Сенная площадь'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Фрунзенская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Московские ворота'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Электросила'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Парк Победы'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Московская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Звездная'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Купчино'){?>
-				<p class="circle" style="background:#0066cc;"></p>
-				<p class="listitemmetro" style="color:#0066cc;">
+				<p class="circle" style="background:#109eff;"></p>
+				<p class="listitemmetro" style="color:#109eff;">
 					<span><?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro'];?>
 </span>
 				</p>
@@ -120,16 +120,16 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 
 
 				<?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Приморская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Василеостровская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Гостиный двор'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Маяковская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Площадь Александра Невского'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Елизаровская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Ломоносовская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Пролетарская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Обухово'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Рыбацкое'){?>
-				<p class="circle" style="background:#009966;"></p>
-				<p class="listitemmetro" style="color:#009966;">
+				<p class="circle" style="background:#a7cf1f;"></p>
+				<p class="listitemmetro" style="color:#a7cf1f;">
 					<span><?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro'];?>
 </span>
 				</p>
 				<?php }?>
 
 				<?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Спасская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Достоевская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Лиговский проспект'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Новочеркасская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Ладожская'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Проспект Большевиков'||$_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro']=='Улица Дыбенко'){?>
-				<p class="circle" style="background:#ff6600;"></p>
-				<p class="listitemmetro" style="color:#ff6600;">
+				<p class="circle" style="background:#ffb801;"></p>
+				<p class="listitemmetro" style="color:#ffb801;">
 					<span><?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['metro'];?>
 </span>
 				</p>
@@ -180,10 +180,23 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 </span>
 			</p-->
 			<p>
-				<span class="listitemprice"><?php echo number_format($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['price'],0,",","
+				<span class="listitemprice">
+				
+
+				<?php echo number_format($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['price'],0,",","
 					");?>
- <?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['currency_name']!=''){?><?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['currency_name'];?>
-<?php }?> руб.
+ 
+					<?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['currency_name']!=''){?>
+						<?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['currency_name'];?>
+
+					<?php }?> 
+
+					<?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['type_sh']=='Продажа квартир'){?>
+					руб.
+					<?php }elseif($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['type_sh']=='Аренда квартир'){?>
+					руб/мес
+					<?php }?>
+
  					
 					</span>
 			</p>
