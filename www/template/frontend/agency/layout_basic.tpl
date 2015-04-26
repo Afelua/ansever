@@ -9,7 +9,7 @@
 
 			<div id="slides">
 				<div class="slides_container">
-					<div class="example2 slider_background">
+					<!--div class="example2 slider_background">
 							<span class="slider_title">Быстрые решения</span>
 							<span class="slider_subtitle">Аренда квартир. Более 300 лучших предложений в Санкт-Петербурге</span>
 							<a href="#" class="slider_link">Читать дальше ></a>
@@ -20,7 +20,7 @@
 						<span class="slider_title">Быстрые решения</span>
 						<span class="slider_subtitle">Аренда квартир. Более 300 лучших предложений в Санкт-Петербурге</span>
 						<a href="#" class="slider_link">Читать дальше ></a>
-						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Slide 2">
+						<img src="/img/slider2.jpg" width="1024" style="height: 250px;" alt="Slide 2">
 					</div>
 
 					<div class="example2 slider_background">
@@ -28,7 +28,19 @@
 						<span class="slider_subtitle">Аренда квартир. Более 300 лучших предложений в Санкт-Петербурге</span>
 						<a href="#" class="slider_link">Читать дальше ></a>
 							
-						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Slide 3"></a>
+						<img src="/img/slider3.jpg" width="1024" style="height: 250px;" alt="Slide 3"></a>
+					</div>
+				</div-->
+				<div class="example2 slider_background">
+						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Slide 1">						
+					</div>
+
+					<div class="example2 slider_background">
+						<img src="/img/slider2.jpg" width="1024" style="height: 250px;" alt="Slide 2">
+					</div>
+
+					<div class="example2 slider_background">			
+						<img src="/img/slider3.jpg" width="1024" style="height: 250px;" alt="Slide 3"></a>
 					</div>
 				</div>
 				<a href="#" class="prev"><img src="/img/left-arrow-gray-hi.png" width="24" height="43" alt="Arrow Prev"></a>
@@ -71,12 +83,11 @@
 			<span class="nameBig">Аренда</span>
 			</td>
 			<td width="270px" style="text-align: center; height: 56px; vertical-align: bottom;">
-			<span class="allview"><a href="">Смотреть все предложения </a></span>
+			<span class="allview"><a href="/rents">Смотреть все предложения </a></span>
 			</td>
 			</tr>
 			</table>
 				<div id="tabs-services-special">{$L_TABS_SPECIAL}</div>
-                <!-- {include file="map.tpl"}-->
             <div class="clear"></div>
 
             <br/>
@@ -91,7 +102,7 @@
 			<span class="nameBig">Продажа</span>
 			</td>
 			<td width="270px" style="text-align: center; height: 56px; vertical-align: bottom;">
-			<span class="allview"><a href="">Смотреть все предложения </a></span>
+			<span class="allview"><a href="/sells">Смотреть все предложения </a></span>
 			</td>
 			</tr>
 			</table>

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 18:15:09
-         compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid_special.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:22727553cbaad8e3c43-45853763%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 18:13:57
+         compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid_special2.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:699553cba65001bc9-42748476%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'e366cab1184b8425eeaf9285b410c856dc35cd3d' => 
+    '1958f5618a34754f86f51cd4175f867badce4ef8' => 
     array (
-      0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid_special.tpl',
-      1 => 1430043299,
+      0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid_special2.tpl',
+      1 => 1430043224,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '22727553cbaad8e3c43-45853763',
+  'nocache_hash' => '699553cba65001bc9-42748476',
   'function' => 
   array (
   ),
@@ -21,7 +21,7 @@ $_smarty_tpl->decodeProperties(array (
 ?><script src="<?php echo $_smarty_tpl->getVariable('estate_folder')->value;?>
 /apps/system/js/json2.js" type="text/javascript"></script>
 
-<div class="b-carousel1"> <!-- контейнер, в котором будет карусель -->
+<div class="b-carousel2"> <!-- контейнер, в котором будет карусель -->
 	
 		<div class="b-carousel-button-left"></div> <!-- левая кнопка -->
 		<div class="b-carousel-button-right"></div> <!-- правая кнопка -->
@@ -199,19 +199,19 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 	$(document).ready(function(){
 
 	$(".b-carousel-button-right").click(function(){ // при клике на правую кнопку запускаем следующую функцию:
-		$(this).parents(".b-carousel1").find(".h-carousel-items").animate({left: "-222px"}, 200); // производим анимацию: блок с набором картинок уедет влево на 222 пикселя (это ширина одного прокручиваемого элемента) за 200 милисекунд.
+		$(this).parents(".b-carousel2").find(".h-carousel-items").animate({left: "-222px"}, 200); // производим анимацию: блок с набором картинок уедет влево на 222 пикселя (это ширина одного прокручиваемого элемента) за 200 милисекунд.
 		setTimeout(function () { // устанавливаем задержку времени перед выполнением следующих функций. Задержка нужна, т.к. эти ффункции должны запуститься только после завершения анимации.
-			$(this).parents(".b-carousel1").find(".h-carousel-items .b-carousel-block").eq(0).clone().appendTo(".h-carousel-items"); // выбираем первый элемент, создаём его копию и помещаем в конец карусели
-			$(this).parents(".b-carousel1").find(".h-carousel-items .b-carousel-block").eq(0).remove(); // удаляем первый элемент карусели		
-			$(this).parents(".b-carousel1").find(".h-carousel-items").css({"left":"0px"}); // возвращаем исходное смещение набора набора элементов карусели
+			$(this).parents(".b-carousel2").find(".h-carousel-items .b-carousel-block").eq(0).clone().appendTo(".h-carousel-items"); // выбираем первый элемент, создаём его копию и помещаем в конец карусели
+			$(this).parents(".b-carousel2").find(".h-carousel-items .b-carousel-block").eq(0).remove(); // удаляем первый элемент карусели		
+			$(this).parents(".b-carousel2").find(".h-carousel-items").css({"left":"0px"}); // возвращаем исходное смещение набора набора элементов карусели
 		}, 300);
 	});
 	
 	$(".b-carousel-button-left").click(function(){ // при клике на левую кнопку выполняем следующую функцию:		
-		$(this).parents(".b-carousel1").find(".h-carousel-items .b-carousel-block").eq(-1).clone().prependTo(".h-carousel-items"); // выбираем последний элемент набора, создаём его копию и помещаем в начало набора	
-		$(this).parents(".b-carousel1").find(".h-carousel-items").css({"left":"-222px"}); // устанавливаем смещение набора -222px		
-		$(this).parents(".b-carousel1").find(".h-carousel-items").animate({left: "0px"}, 200); // за 200 милисекунд набор элементов плавно переместится в исходную нулевую точку
-		$(this).parents(".b-carousel1").find(".h-carousel-items .b-carousel-block").eq(-1).remove(); // выбираем последний элемент карусели и удаляем его
+		$(this).parents(".b-carousel2").find(".h-carousel-items .b-carousel-block").eq(-1).clone().prependTo(".h-carousel-items"); // выбираем последний элемент набора, создаём его копию и помещаем в начало набора	
+		$(this).parents(".b-carousel2").find(".h-carousel-items").css({"left":"-222px"}); // устанавливаем смещение набора -222px		
+		$(this).parents(".b-carousel2").find(".h-carousel-items").animate({left: "0px"}, 200); // за 200 милисекунд набор элементов плавно переместится в исходную нулевую точку
+		$(this).parents(".b-carousel2").find(".h-carousel-items .b-carousel-block").eq(-1).remove(); // выбираем последний элемент карусели и удаляем его
 	});
 	
 });

@@ -1059,7 +1059,7 @@ class Ajax_Server extends SiteBill {
                 }
                 if ( $GC->get_grid_total_records() > 0 ) {
                     $this->template->assert('grid_items',$adv);
-                    $rs=$smarty->fetch('realty_grid_special.tpl');
+                    $rs=$smarty->fetch('realty_grid_special2.tpl');
                 } else {
                     $rs = '<h2>'.Multilanguage::_('L_NO_HOT').'</h2>';
                 }

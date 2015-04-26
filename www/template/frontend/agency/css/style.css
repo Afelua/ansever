@@ -103,7 +103,7 @@ img {
 
 #right2 { /*position: relative;*/
 	padding-bottom: 10px;
-	margin: 58px 0px 3px 3px;
+	margin: 20px 0px 3px 3px;
 	float: right;
 	margin-right: 0;
 	width: 250px;
@@ -1033,8 +1033,9 @@ u {
  * END
  */
 .title {
-	color: #da251e;
-	font-size: 18px;
+	color: #224155;
+	font-weight: bold;
+ 	padding-bottom: 5px;
 }
 
 #home_page a {
@@ -1723,7 +1724,8 @@ max-height: 75px;*/
 	font-weight: normal;
 	color: #224155;
 	font-size: 14px;
-	line-height: 14px;
+	line-height: 16px;
+	width: 200px;
 }
 
 .t_i_h3 a {
@@ -1775,7 +1777,7 @@ max-height: 75px;*/
 	width: 213px;
 	float: left;
 	margin: 10px 20px 10px 0px;
-	height: 230px;
+	height: 240px; 
 }
 
 .grid_thumbs_premium {
@@ -2127,7 +2129,6 @@ div.footer_Big a{
 .tabs_cont {
 	position: relative;
 	z-index: 2;
-	height: 230px;
 	width: 769px;
 	padding-top: 20px;
 	float: left;
@@ -2153,10 +2154,9 @@ div.footer_Big a{
 
 .temnyi { 
   	background-color: #fff;
-	height: 150px;
 	width: 650px;
 	color: #224155;
-	padding: 20px 52px 20px 63px;
+	padding: 30px 50px;
 	left: 30px;
 	position: relative;
   }
@@ -2167,9 +2167,9 @@ div.footer_Big a{
 	width: 70px;
 	background-image: url("/img/question.jpg");
 	background-repeat: no-repeat;
-	position: relative;
-	top: -194px;
-	left: -94px;
+	position: absolute;
+	top: -30px;
+	left: -37px;
 }
 
 
@@ -2193,7 +2193,6 @@ div.footer_Big a{
 .green h1{
 
 	color: rgb(255, 255, 255);
-	padding: 15px;
 	font-size: 18px;
 }
 
@@ -2333,11 +2332,19 @@ div.footer_Big a{
 	font-style: italic;
 }
 
-.news .all{
+.news .all {
 	text-align: right;
 	font-weight: bold;
 	font-style: italic;
 }
+
+.temnyi .all, #news .all{
+	text-align: left;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
 .news_hr{
 
 	margin: 20px 0px 45px;
@@ -2446,7 +2453,7 @@ div.footer_Big a{
 .faq_specialist{
 
 	font-weight: bold;
-	padding: 10px 0px;
+	padding: 0px 0px 10px;
 	margin-top: 57px;
 }
 
@@ -2459,7 +2466,7 @@ div.footer_Big a{
 #faq_specialist{
 
 	font-weight: bold;
-	padding: 10px 0px;
+	padding: 0px 0px 10px;
 }
 
 .phone_faq{
@@ -2564,4 +2571,32 @@ to { opacity: 1 }
 
 #s1{
 	padding-top: 11px;
+}
+
+.read_question{
+	  text-align: left;
+	  font-weight: bold;
+	  font-style: italic;
+	  font-size: 12px;
+
+}
+
+h1.article{
+	margin: 0px 0px 0px 0px;
+  	font-weight: normal;
+  	font-size: 14px;
+  	color: #000;
+  	text-align: left;
+}
+
+h1 a{
+	color: #000;
+}
+
+#tab_c1 .news{
+	background-color: transparent;
+}
+
+#tab_c1 .news:hover{
+	background-color: transparent;
 }

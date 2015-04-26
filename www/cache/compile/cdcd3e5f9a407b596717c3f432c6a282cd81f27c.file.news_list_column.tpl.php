@@ -1,24 +1,23 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 15:53:52
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 00:53:49
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\news_list_column.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3086555238d10e2c004-62671681%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:21119553bc69dbda361-20683346%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cdcd3e5f9a407b596717c3f432c6a282cd81f27c' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\news_list_column.tpl',
-      1 => 1427702284,
+      1 => 1429980511,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3086555238d10e2c004-62671681',
+  'nocache_hash' => '21119553bc69dbda361-20683346',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
-<?php if (!is_callable('smarty_modifier_truncate')) include 'Z:\home\anseverv2\www\third\smarty\plugins\modifier.truncate.php';
-?><div class="news">
+<div class="news" style="background:#fff;">
 
 <div class="questions_specialist">ВОПРОСЫ СПЕЦИАЛИСТАМ:</div>
 <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
@@ -46,21 +45,23 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['first']      = ($_smart
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total']);
 ?>
 <div>
-	<?php echo $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['title'];?>
+	
+	<br>
+		<?php echo $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['date'];?>
 
-	<br><br>
-			<a href="" class="spoiler_links"><?php echo smarty_modifier_truncate(preg_replace('!<[^>]*?>!', ' ', $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['anons']),100);?>
+		<a href="" class="spoiler_links"><?php echo $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['title'];?>
 </a>
-		<br><br>
 		<div class="spoiler_body">
-		<div class="select_box_td"><?php echo preg_replace('!<[^>]*?>!', ' ', $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['description']);?>
-</div>
+		<div class="select_box_td"><br><?php echo $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['anons'];?>
+<a href="<?php echo $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['href'];?>
+" class="read_question">Читать дальше</a></div>
 		</div>
 	<br>
 </div>
 
 <?php endfor; endif; ?>
+<br>
 <div class="all">
-	<a href="/FAQ">cм. все вопросы</a>
+	<a href="/news">cм. все вопросы</a>
 </div>
 </div>

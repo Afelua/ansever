@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 16:24:59
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 18:36:48
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\layout_basic.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:209245523945ba37934-17720213%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:7940553cbfc0ea9942-57093756%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4b8ff6e510854792833a317165e25cdd8351ebd7' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\layout_basic.tpl',
-      1 => 1428395090,
+      1 => 1430044605,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '209245523945ba37934-17720213',
+  'nocache_hash' => '7940553cbfc0ea9942-57093756',
   'function' => 
   array (
   ),
@@ -29,7 +29,7 @@ $_smarty_tpl->decodeProperties(array (
 
 			<div id="slides">
 				<div class="slides_container">
-					<div class="example2 slider_background">
+					<!--div class="example2 slider_background">
 							<span class="slider_title">Быстрые решения</span>
 							<span class="slider_subtitle">Аренда квартир. Более 300 лучших предложений в Санкт-Петербурге</span>
 							<a href="#" class="slider_link">Читать дальше ></a>
@@ -40,7 +40,7 @@ $_smarty_tpl->decodeProperties(array (
 						<span class="slider_title">Быстрые решения</span>
 						<span class="slider_subtitle">Аренда квартир. Более 300 лучших предложений в Санкт-Петербурге</span>
 						<a href="#" class="slider_link">Читать дальше ></a>
-						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Slide 2">
+						<img src="/img/slider2.jpg" width="1024" style="height: 250px;" alt="Slide 2">
 					</div>
 
 					<div class="example2 slider_background">
@@ -48,7 +48,19 @@ $_smarty_tpl->decodeProperties(array (
 						<span class="slider_subtitle">Аренда квартир. Более 300 лучших предложений в Санкт-Петербурге</span>
 						<a href="#" class="slider_link">Читать дальше ></a>
 							
-						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Slide 3"></a>
+						<img src="/img/slider3.jpg" width="1024" style="height: 250px;" alt="Slide 3"></a>
+					</div>
+				</div-->
+				<div class="example2 slider_background">
+						<img src="/img/slider1.jpg" width="1024" style="height: 250px;" alt="Slide 1">						
+					</div>
+
+					<div class="example2 slider_background">
+						<img src="/img/slider2.jpg" width="1024" style="height: 250px;" alt="Slide 2">
+					</div>
+
+					<div class="example2 slider_background">			
+						<img src="/img/slider3.jpg" width="1024" style="height: 250px;" alt="Slide 3"></a>
 					</div>
 				</div>
 				<a href="#" class="prev"><img src="/img/left-arrow-gray-hi.png" width="24" height="43" alt="Arrow Prev"></a>
@@ -91,14 +103,12 @@ $_smarty_tpl->decodeProperties(array (
 			<span class="nameBig">Аренда</span>
 			</td>
 			<td width="270px" style="text-align: center; height: 56px; vertical-align: bottom;">
-			<span class="allview"><a href="">Смотреть все предложения </a></span>
+			<span class="allview"><a href="/rents">Смотреть все предложения </a></span>
 			</td>
 			</tr>
 			</table>
 				<div id="tabs-services-special"><?php echo $_smarty_tpl->getVariable('L_TABS_SPECIAL')->value;?>
 </div>
-                <!-- <?php $_template = new Smarty_Internal_Template("map.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
- echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>-->
             <div class="clear"></div>
 
             <br/>
@@ -113,7 +123,7 @@ $_smarty_tpl->decodeProperties(array (
 			<span class="nameBig">Продажа</span>
 			</td>
 			<td width="270px" style="text-align: center; height: 56px; vertical-align: bottom;">
-			<span class="allview"><a href="">Смотреть все предложения </a></span>
+			<span class="allview"><a href="/sells">Смотреть все предложения </a></span>
 			</td>
 			</tr>
 			</table>

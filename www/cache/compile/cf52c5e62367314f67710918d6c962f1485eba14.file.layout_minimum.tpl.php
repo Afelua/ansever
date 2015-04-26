@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 15:56:35
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-25 23:20:59
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\layout_minimum.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2183755238db3697bf1-61355519%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:53553bb0db0bc024-10408704%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cf52c5e62367314f67710918d6c962f1485eba14' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\layout_minimum.tpl',
-      1 => 1427836440,
+      1 => 1429975255,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2183755238db3697bf1-61355519',
+  'nocache_hash' => '53553bb0db0bc024-10408704',
   'function' => 
   array (
   ),
@@ -69,26 +69,48 @@ $_smarty_tpl->decodeProperties(array (
 
 				<div class="tabs_cont">
 					<div id="tab_c1">
+					<br><br>
+						<?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['name'] = 'i';
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('news_list_column')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show'] = true;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'] = 1;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['start'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'] > 0 ? 0 : $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop']-1;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show']) {
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'];
+    if ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total'] == 0)
+        $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show'] = false;
+} else
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total'] = 0;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show']):
 
-					<div class="title_faq_label">Юридические вопросы</div>
+            for ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['start'], $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] = 1;
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] <= $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total'];
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index'] += $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'], $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration']++):
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['rownum'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index_prev'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index'] - $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index_next'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index'] + $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == 1);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total']);
+?>
+						<div class="temnyi">
+							<div class="svetlyi"></div>
+							<?php echo $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['title'];?>
 
-					<div class="temnyi">
-					ПЕРЕУСТУПКА прав требования.
-
-					По мнению многих аналитиков, сегодня интерес к квартирам в новостройках значительно превышает интерес к предложениям вторничного рынка, особенно в активно растущем Санкт-Петербурге: по данным Росстата за минувший 2013 год в нашем городе было построено более 2,5 млн. кв. м. жилья. Но купить квартиру в строящемся доме можно не только у Застройщика. Бывают случаи, когда ему просто нечего предложить. Но это отнюдь не означает, что нет никаких шансов обзавестись квадратными метрами в понравившемся вам доме. Ведь желанная квартира может продаваться по договору Цессии.
-
-  						<div class="svetlyi"></div>
+							<br>
+							<?php echo $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['anons'];?>
+<br>
+							<div class="all">
+								<a href="<?php echo $_smarty_tpl->getVariable('news_list_column')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['href'];?>
+">Читать дальше
+		  						</a>
+		  					</div>
 						</div>
-
 						<br><br><br>
+						<?php endfor; endif; ?>
 
-					<div class="temnyi">
-					ПЕРЕУСТУПКА прав требования.
 
-					По мнению многих аналитиков, сегодня интерес к квартирам в новостройках значительно превышает интерес к предложениям вторничного рынка, особенно в активно растущем Санкт-Петербурге: по данным Росстата за минувший 2013 год в нашем городе было построено более 2,5 млн. кв. м. жилья. Но купить квартиру в строящемся доме можно не только у Застройщика. Бывают случаи, когда ему просто нечего предложить. Но это отнюдь не означает, что нет никаких шансов обзавестись квадратными метрами в понравившемся вам доме. Ведь желанная квартира может продаваться по договору Цессии.
-
-  					<div class="svetlyi"></div>
-					</div>
 
 					</div>
 					<div id="tab_c2">Часто задаваемые вопросы</div>

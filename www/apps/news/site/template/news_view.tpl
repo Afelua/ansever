@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="{$estate_folder}/apps/news/site/template/css/style.css">
+<h1 class="article"> <a href="/news">Статьи</a> -> {$news.title.value} </h1>
 <div id="singleNews">
 	<div class="date">{$news.date.value_string}</div>
-	<div class="title">{$news.title.value}</div>
+	<div class="title">{$news.title.value}</div><br>
 	<div class="share">
 	</div>
 
@@ -16,6 +17,9 @@
 
 {if $more_news|count>0}
 <div id="news" class="archive">
+	<div class="all">
+		Другие статьи:
+	</div>
     {section name=i loop=$more_news}
     <div class="news">
         <div class="date">{$more_news[i].date}</div>
@@ -33,6 +37,7 @@
     
 </div>
 {/if} 
+</div>
 <script src="{$estate_folder}/apps/comment/js/comment_controller.js"></script>
 {literal}
 <script>
