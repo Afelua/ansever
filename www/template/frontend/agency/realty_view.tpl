@@ -286,7 +286,7 @@ $('#thumbs').delegate('img','click', function(){
     		</span><br>
     
      		{if isset($data.phone.value) && $data.phone.value!=''}
-    		<span>т. {$data.phone.value}</span><br>
+    		<span>тел.: <a href="tel:{$data.phone.value}"> {$data.phone.value}</a></span><br>
     		{elseif $user_data.phone.value != ''}
     	 	<span>т. {$user_data.phone.value}</span><br>
     		{/if}
@@ -297,9 +297,6 @@ $('#thumbs').delegate('img','click', function(){
     	 	<span><a href="mailto:{$user_data.email.value}">{$user_data.email.value}</a></span><br>
     		{/if} 
 
-    		{if $user_data.mobile.value != ''}
-        	<span>тел. <a href="tel:{$user_data.mobile.value}">{$user_data.mobile.value}</a></span></br>
-    		{/if}
 
     		{if $user_data.icq.value != ''}
         	<span>ICQ: {$user_data.icq.value}</span><br>
@@ -337,8 +334,8 @@ $('#thumbs').delegate('img','click', function(){
     {$data.district_id.value_string} р-он, 
     {/if}
 
-    {if isset($data.street_id.value_string) && $data.street_id.value_string != ''}
-    {$data.street_id.value_string}, 
+    {if isset($data.street_name.value) && $data.street_name.value != ''}
+    {$data.street_name.value}, 
     {/if}
 
     {if isset($data.number.value) && $data.number.value != ''}

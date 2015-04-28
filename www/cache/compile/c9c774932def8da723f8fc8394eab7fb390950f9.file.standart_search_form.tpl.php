@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-23 19:04:58
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-28 15:48:32
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\standart_search_form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:232085538d1dac08443-56610850%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:16392553f3b500a2c81-76932932%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c9c774932def8da723f8fc8394eab7fb390950f9' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\standart_search_form.tpl',
-      1 => 1429787021,
+      1 => 1430207308,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '232085538d1dac08443-56610850',
+  'nocache_hash' => '16392553f3b500a2c81-76932932',
   'function' => 
   array (
   ),
@@ -31,10 +31,10 @@ $_smarty_tpl->decodeProperties(array (
 				<input type="hidden" name="extended_search" value="1" />
 <table border="0" cellspacing="0" cellpadding="0" width="270">
 
-<tr style="">
+<!--tr style="">
 	<td colspan="4"><?php echo $_smarty_tpl->getVariable('structure_box')->value;?>
 </td>
-</tr>
+</tr-->
 
 <tr>
 	<td height="5"></td>
@@ -118,7 +118,7 @@ $_smarty_tpl->decodeProperties(array (
 	<span class="select_box_td"><input type="text" class="price_for price_field" name="price" value="<?php if (isset($_smarty_tpl->getVariable('price',null,true,false)->value)&&$_smarty_tpl->getVariable('price')->value!=0){?><?php echo number_format($_smarty_tpl->getVariable('price')->value,0,'',' ');?>
 <?php }else{ ?><?php echo number_format($_smarty_tpl->getVariable('max_price')->value,0,'',' ');?>
 <?php }?>"/></span>
-	&nbsp; тыс. р.
+	&nbsp; р.
 	</td>
 </tr>
 <tr>

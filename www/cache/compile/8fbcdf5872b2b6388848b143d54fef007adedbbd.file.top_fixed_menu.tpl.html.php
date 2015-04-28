@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-08 17:06:46
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-28 16:49:47
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\top_fixed_menu.tpl.html" */ ?>
-<?php /*%%SmartyHeaderCode:128955524efa684a665-39603160%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:22940553f49ab5feba5-75084638%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '8fbcdf5872b2b6388848b143d54fef007adedbbd' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\top_fixed_menu.tpl.html',
-      1 => 1428484001,
+      1 => 1430210982,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '128955524efa684a665-39603160',
+  'nocache_hash' => '22940553f49ab5feba5-75084638',
   'function' => 
   array (
   ),
@@ -29,13 +29,13 @@ $_smarty_tpl->decodeProperties(array (
 			</td>
 
 			<td width="34%" style="text-align: center;">
-				<img src="/img/logo1.png">
+				<a href="/"><img src="/img/logo1.png" style="height:55px;"></a>
 			</td>
 
 			<td width="33%" style="text-align: right;">
 				Нужна помощь?<b> <br>
 				Звоните: <a href="tel:+7 (812) 327-49-79">(812) 327-49-79</a> </b> <br>
-				или <span style="text-decoration:underline">оставьте заявку</span>
+				или <a href="/client/order/contactus/"><span style="text-decoration:underline">оставьте заявку</a></span>
 
 			</td>
 			</tr>

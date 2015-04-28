@@ -1,5 +1,24 @@
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-28 17:18:34
+         compiled from "Z:/home/anseverv2/www/template/frontend/agency\sitebill_footer.tpl.html" */ ?>
+<?php /*%%SmartyHeaderCode:29771553f506a9f9742-04912706%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '24b4ee4cbfe569ff242b2ec0809226eb70ef5711' => 
+    array (
+      0 => 'Z:/home/anseverv2/www/template/frontend/agency\\sitebill_footer.tpl.html',
+      1 => 1430212609,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '29771553f506a9f9742-04912706',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
 
-            {literal}
+            
  <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 (function (d, w, c) {
@@ -72,4 +91,4 @@ NREUMQ.a=window.onload;window.onload=NREUMQ.f;
 NREUMQ.push(["nrfj","beacon-5.newrelic.com","fd068ccdf6","2591828","dloPTBNXDQpQERtDWFJQEhcIVgUDTQ==",0,280,new Date().getTime(),"","","","",""]);</script></body>
 
 <script type="text/javascript">document.write("<script type='text/javascript' charset='utf-8' id='onicon_loader' src='http://cp.onicon.ru/js/simple_loader.js?site_id=4fb5f2291ab788423d007ad8&" + (new Date).getTime() + "'><\/script>");</script>            
-            {/literal}
+            

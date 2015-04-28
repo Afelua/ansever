@@ -15,6 +15,7 @@ var estate_folder = '{$estate_folder}';
 <link rel=stylesheet type="text/css" href="{$estate_folder}/template/frontend/agency/css/style.css">
 <link rel=stylesheet type="text/css" href="{$estate_folder}/template/frontend/agency/css/bootstrap.corrections.css">
 <link rel=stylesheet type="text/css" href="{$estate_folder}/template/frontend/agency/css/purecssmenu.css">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <script type="text/javascript" src="{$estate_folder}/apps/system/js/jquery/jquery.js"></script>
 <script type="text/javascript" src="{$estate_folder}/apps/system/js/bootstrap/js/bootstrap.min.js"></script>
 

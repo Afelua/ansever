@@ -31,6 +31,7 @@
         </tr>
 
     </table>
+    {include file='sitebill_footer.tpl.html'}
          {if $show_demo_banners != 1}
             {literal}
             {/literal}

@@ -2659,3 +2659,12 @@ h1 a{
   	padding-bottom: 15px;
   	font-weight: normal;
 }
+
+#simple_search input[name='price']{
+
+	width: 80px;
+}
+.news .spoiler_links:focus {
+  background: #fff;
+  color: #224155;
+}

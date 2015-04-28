@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 20:46:31
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-28 17:14:54
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:20726553cde27e6f9d9-55292675%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:5796553f4f8e4cae18-89704386%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '912e9c879b2d03c531c09574e6949852cb22c318' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\header.tpl',
-      1 => 1430052386,
+      1 => 1430212489,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '20726553cde27e6f9d9-55292675',
+  'nocache_hash' => '5796553f4f8e4cae18-89704386',
   'function' => 
   array (
   ),
@@ -44,6 +44,7 @@ var estate_folder = '<?php echo $_smarty_tpl->getVariable('estate_folder')->valu
 /template/frontend/agency/css/bootstrap.corrections.css">
 <link rel=stylesheet type="text/css" href="<?php echo $_smarty_tpl->getVariable('estate_folder')->value;?>
 /template/frontend/agency/css/purecssmenu.css">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <script type="text/javascript" src="<?php echo $_smarty_tpl->getVariable('estate_folder')->value;?>
 /apps/system/js/jquery/jquery.js"></script>
 <script type="text/javascript" src="<?php echo $_smarty_tpl->getVariable('estate_folder')->value;?>

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-26 19:33:41
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-28 16:45:41
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_grid_thumbs.tpl.html" */ ?>
-<?php /*%%SmartyHeaderCode:27025553ccd15109ed4-64681946%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:22639553f48b531c219-38773774%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a4b767a1b26a2c76fbe52c3427fde41432db5ea6' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_grid_thumbs.tpl.html',
-      1 => 1430048016,
+      1 => 1430210733,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '27025553ccd15109ed4-64681946',
+  'nocache_hash' => '22639553f48b531c219-38773774',
   'function' => 
   array (
   ),
@@ -150,10 +150,10 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 			<h3 class="t_i_h3">
 
 				<span> <?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['city']!=''){?> <?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['city'];?>
-<?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['street']!=''){?>, <?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['street'];?>
+<?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['street_name']!=''){?>, <?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['street_name'];?>
 <?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['number']!=''){?>, <?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['number'];?>
 <?php }?><?php }?>
-					<?php }else{ ?> <?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['street']!=''){?> <?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['street'];?>
+					<?php }else{ ?> <?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['street_name']!=''){?> <?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['street_name'];?>
 <?php if ($_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['number']!=''){?>, <?php echo $_smarty_tpl->getVariable('grid_items')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['number'];?>
 <?php }?> <?php }?>
 					<?php }?> </span>

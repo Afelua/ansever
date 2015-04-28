@@ -10,9 +10,9 @@
 				<input type="hidden" name="extended_search" value="1" />
 <table border="0" cellspacing="0" cellpadding="0" width="270">
 
-<tr style="">
+<!--tr style="">
 	<td colspan="4">{$structure_box}</td>
-</tr>
+</tr-->
 
 <tr>
 	<td height="5"></td>
@@ -88,7 +88,7 @@
 		<span class="select_box_td"><input type="text" class="price_from price_field" name="price_min" value="{if isset($price_min)}{$price_min|number_format:0:'':' '}{else}0{/if}"/></span>
     &nbsp;{$L_TO}&nbsp;
 	<span class="select_box_td"><input type="text" class="price_for price_field" name="price" value="{if isset($price) && $price!=0}{$price|number_format:0:'':' '}{else}{$max_price|number_format:0:'':' '}{/if}"/></span>
-	&nbsp; тыс. р.
+	&nbsp; р.
 	</td>
 </tr>
 <tr>

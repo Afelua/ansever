@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 15:55:14
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-28 17:06:59
          compiled from "Z:/home/anseverv2/www/apps/mailbox/site/template/form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:377355238d62afa575-34128308%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:30505553f4db3226666-07376131%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '5e5af17faf4e088e83ee157b340a55a91b1e39d5' => 
     array (
       0 => 'Z:/home/anseverv2/www/apps/mailbox/site/template/form.tpl',
-      1 => 1427643818,
+      1 => 1430212009,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '377355238d62afa575-34128308',
+  'nocache_hash' => '30505553f4db3226666-07376131',
   'function' => 
   array (
   ),
@@ -23,13 +23,12 @@ $_smarty_tpl->decodeProperties(array (
 <style>
 
 #contact_with_author_window, #send_friend_window {
-	background-color: White;
-	position:absolute;
-	z-index:1000;
-	width:490px;
-	display: none;
-	top: 150px !important;
-	left: 32%;
+    position: fixed;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: rgba(51, 51, 51, 0.8);
 }
 
 #contact_with_author_window .closer, #send_friend_window .closer {
@@ -59,6 +58,15 @@ $_smarty_tpl->decodeProperties(array (
 	/*width: 290px;*/
 }
 
+.contact_with_author_window_form{
+	width: 490px;
+	left: 32%;
+	top: 100px !important;
+	z-index: 1508;
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+}
+
 </style>
 <script type="text/javascript">
 function hideErrors(){
@@ -86,7 +94,6 @@ $(document).ready(function(){
 					form.find('[name=phone]').val(json.phone);
 					form.find('[name=email]').val(json.email);
 				}
-				
 			}
 		});
 		//alert(e.pageX +', '+ e.pageY);
@@ -152,8 +159,7 @@ $(document).ready(function(){
 						form.find('[name=phone]').val('');
 						form.find('[name=email]').val('');
 						form.find('[name=message]').val('');
-						
-						$('#contact_with_author_window').hide();
+						document.getElementById('success').style.display = 'block';
 					}
 				}
 			});
@@ -218,6 +224,8 @@ $(document).ready(function(){
 <?php }else{ ?>Забронировать/Записаться на просмотр<?php }?></a></span>
 </div>
 <div id="contact_with_author_window" style="display: none;">
+<div class="contact_with_author_window_form">
+
 <div class="closer"><img src="/img/close.gif"/></div>
 <div class="row-fluid" style="height: 20px;">
     <div class="span12 green" style="top: -26px; position: relative;text-align: center;">
@@ -225,6 +233,8 @@ $(document).ready(function(){
 
     </div>
 </div>
+<div class="alert alert-success" style="display:none;text-align: center;" id="success">
+Спасибо! Ваша заявка успешно отправлена, наш специалист свяжется с вами в ближайшее время.</div>
 <div class="inner">
 	<form>
 	
@@ -250,6 +260,8 @@ $(document).ready(function(){
 	</form>
 </div>
 </div>
+</div>
+
 <div id="send_friend_window" style="display: none;">
 <div class="closer"></div>
 <div class="inner">

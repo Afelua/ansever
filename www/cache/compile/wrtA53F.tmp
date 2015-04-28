@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-28 16:44:08
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-28 16:43:20
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\realty_view.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:8369553f4858c370b4-46964694%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:19632553f4828419cc1-93245867%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4c5590a917bccb0b3805d7278392adbdc32e72be' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\realty_view.tpl',
-      1 => 1430210645,
+      1 => 1430210596,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '8369553f4858c370b4-46964694',
+  'nocache_hash' => '19632553f4828419cc1-93245867',
   'function' => 
   array (
   ),
@@ -417,6 +417,8 @@ $_template->assign('title_data',array($_smarty_tpl->getVariable('data')->value['
     <?php echo $_smarty_tpl->getVariable('data')->value['district_id']['value_string'];?>
  р-он, 
     <?php }?>
+
+<?php echo print_r($_smarty_tpl->getVariable('data')->value);?>
 
     <?php if (isset($_smarty_tpl->getVariable('data',null,true,false)->value['street_name']['value'])&&$_smarty_tpl->getVariable('data')->value['street_name']['value']!=''){?>
     <?php echo $_smarty_tpl->getVariable('data')->value['street_name']['value'];?>

@@ -18,7 +18,7 @@ $(document).ready(function(){
 				data: {action:'read_message',id:id},
 				dataType: 'json',
 				success: function(json){
-					
+
 				}
 			});
 			parent.removeClass('unreaded');

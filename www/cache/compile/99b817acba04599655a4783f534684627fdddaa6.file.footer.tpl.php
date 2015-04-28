@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2015-04-07 02:13:29
+<?php /* Smarty version Smarty-3.0.8, created on 2015-04-28 17:18:34
          compiled from "Z:/home/anseverv2/www/template/frontend/agency\footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:188595522ccc9c8f262-20133759%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:24858553f506a79fdb8-18070067%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '99b817acba04599655a4783f534684627fdddaa6' => 
     array (
       0 => 'Z:/home/anseverv2/www/template/frontend/agency\\footer.tpl',
-      1 => 1426942474,
+      1 => 1430212710,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '188595522ccc9c8f262-20133759',
+  'nocache_hash' => '24858553f506a79fdb8-18070067',
   'function' => 
   array (
   ),
@@ -50,6 +50,8 @@ $_smarty_tpl->decodeProperties(array (
         </tr>
 
     </table>
+    <?php $_template = new Smarty_Internal_Template('sitebill_footer.tpl.html', $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
          <?php if ($_smarty_tpl->getVariable('show_demo_banners')->value!=1){?>
             
             

@@ -145,9 +145,9 @@
 
 				<span> {if
 					$grid_items[i].city ne ''} {$grid_items[i].city}{if
-					$grid_items[i].street ne ''}, {$grid_items[i].street}{if
+					$grid_items[i].street_name ne ''}, {$grid_items[i].street_name}{if
 					$grid_items[i].number ne ''}, {$grid_items[i].number}{/if}{/if}
-					{else} {if $grid_items[i].street ne ''} {$grid_items[i].street}{if
+					{else} {if $grid_items[i].street_name ne ''} {$grid_items[i].street_name}{if
 					$grid_items[i].number ne ''}, {$grid_items[i].number}{/if} {/if}
 					{/if} </span>
 			</h3>
